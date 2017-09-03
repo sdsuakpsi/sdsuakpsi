@@ -1,0 +1,429 @@
+$blue: #27c4f4
+$yellow: #fde143
+$red: #c0392b
+
+$sans-serif: "Open Sans", sans-serif
+$serif: "Bitter", serif
+$lobster: "Lobster", lobster
+
+@font-face
+    font-family: 'WisdomScriptAJ'
+    src: url('./WisdomScriptAJ.eot')
+    src: local('WisdomScriptAJ'), url('./WisdomScriptAJ.woff') format('woff'), url('./WisdomScriptAJ.ttf') format('truetype')
+
+html, body
+    background: #efefef
+    height: 100%
+    width: 100%
+    font-size: 1em
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+h2
+    font-size: 2em
+    font-weight: 400
+    font-family: $sans-serif
+    text-transform: uppercase
+
+h3
+    font-size: 1.5em
+    font-weight: 400
+    font-family: $sans-serif
+    text-transform: uppercase
+
+h4
+    font-size: 1.1em
+    font-weight: 400
+    font-family: $sans-serif
+    text-transform: uppercase
+
+p
+    font-size: 0.85em
+    font-family: $serif
+    font-weight: 400
+    font-style: none
+
+a
+    text-decoration: none
+
+.cover
+    width: 940px
+    margin: 0 auto
+    height: auto
+    clear: both
+    overflow: hidden
+    position: relative
+
+// link on white background
+.linkclick
+    font-size: 0.85em
+    font-weight: 600
+    font-family: $sans-serif
+    text-transform: uppercase
+    letter-spacing: 1px
+    margin: 20px 0px 20px 0px
+    width: auto
+    color: #303030
+
+    a, a:visited
+        line-height: 60px
+        text-decoration: none
+        color: #303030
+        padding: 10px 15px 10px 15px
+        border: 3px solid #303030
+        border-radius: 10px
+        margin-left: 7px
+        margin-right: 7px
+
+        &:hover
+            color: $blue
+            border: 3px solid $blue
+
+        label
+            display: inline-block
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            width: 100%
+            padding: 0px 0px 3px 0px
+            margin-top: 15px
+            color: #999999
+            text-align: left
+
+        label.checked
+            display: none
+            background: none
+            height: 0
+            width: 0
+            border: 0px
+            margin-top: 0px
+            padding: 0px
+            text-indent: -5000px
+
+        input[type=submit]
+            float: right
+            width: 150px
+            height: 30px
+            background: #e6e6e6
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            color: #c0c0c0
+            border: 0px
+            cursor: pointer
+            margin-top: 10px
+
+            &:hover
+                border: 0px
+                color: #efefef
+                background: $blue
+
+        input, textarea
+            overflow: hidden
+            display: block
+            color: #202020
+            font-size: 0.8em
+            font-weight: 400
+            font-family: $serif
+            background: lighten(#efefef, 2%)
+            -webkit-box-shadow: none
+            box-shadow: none
+            border: 1px solid #cccccc
+            border-radius: 3px
+            width: 628px
+
+        input
+            height: 30px
+            padding: 0px 5px
+            margin: 0px
+
+        textarea
+            height: 100px
+            padding: 5px 5px
+            margin: 0px
+            max-width: 628px
+
+        input:focus, textarea:focus
+            outline: none
+            border: 1px solid rgba(39, 197, 244, 0.8)
+            -webkit-box-shadow: 0 0 8px rgba(39, 197, 244, 0.6)
+            box-shadow: 0 0 3px rgba(39, 197, 244, 0.6)
+
+        input:hover, textarea:hover
+            border: 1px solid rgba(39, 197, 244, 0.8)
+
+        input.error, textarea.error
+            background: lighten($red, 50%)
+            border: lighten($red, 30%) solid 1px
+
+        input.error:hover, textarea.error:hover
+            border: 1px solid lighten($red, 10%)
+
+        input.error:focus, textarea.error:focus
+            outline: none
+            border: 1px solid lighten($red, 10%)
+            -webkit-box-shadow: 0 0 8px lighten($red, 30%)
+            box-shadow: 0 0 3px lighten($red, 30%)
+
+        label.error
+            width: auto
+            float: left
+            height: auto
+            color: $red
+            margin: 0px 0px -2px
+
+// link on black background
+.linkclickblk
+    font-size: 0.85em
+    font-weight: 600
+    font-family: $sans-serif
+    text-transform: uppercase
+    letter-spacing: 1px
+    margin: 30px 0px 20px 0px
+    margin: 0 auto
+    width: auto
+    color: #efefef
+
+    a, a:visited
+        font-weight: 600
+        font-family: $sans-serif
+        text-transform: uppercase
+        line-height: 60px
+        letter-spacing: 1px
+        text-decoration: none
+        color: #efefef
+        padding: 10px 15px 10px 15px
+        border: 3px solid #efefef
+        border-radius: 10px
+        margin-left: 7px
+        margin-right: 7px
+
+        &:hover
+            color: $yellow
+            border: 3px solid $yellow
+
+    em
+        font-weight: 600
+        font-family: $sans-serif
+        text-transform: uppercase
+        line-height: 60px
+        letter-spacing: 1px
+        text-decoration: none
+        padding: 10px 15px 10px 15px
+        border-radius: 10px
+        margin-left: 7px
+        margin-right: 7px
+        color: $yellow
+        border: 3px solid $yellow
+        font-style: normal
+        text-decoration: none
+
+/** NAVIGATION BAR
+nav
+    width: 100%
+    min-width: 480px
+    height: 64px
+    background-repeat: repeat-x
+    background-image: image-url("header_bg.png")
+    position: fixed
+    top: 0
+    overflow: hidden
+    z-index: 999999
+
+    .cover
+        width: 100%
+        max-width: 940px
+        min-width: 480px
+
+        h1
+            float: left
+            margin: 0px
+            padding: 0px
+            height: 60px
+
+            a, a:visited, a.active, a.active:visited
+                background: image-url("logo_navbar.png") no-repeat -68px 0
+                display: block
+                width: 68px
+                height: 60px
+                margin: 0px
+                text-indent: -9999em
+                position: relative
+
+                &:hover
+                    background: image-url("logo_navbar.png") no-repeat -136px 0
+
+            a.active, a.active:visited, a.active:hover
+                background-position: 0 0
+                cursor: default
+
+        #navbar
+            float: right
+            margin: 0px
+            padding: 0px
+            height: 60px
+            font-size: 0.8em
+            font-weight: 600
+            text-transform: uppercase
+            font-family: $sans-serif
+
+            li:last-child
+                margin: 0px 0px 0px 10px
+
+                a, a:visited
+                    font-weight: bold
+
+                a.active, a.active:hover
+                    color: $blue
+                    cursor: default
+                    background: none
+
+            li
+                margin: 0px 10px 0px 10px
+                list-style: none
+                float: left
+                line-height: 60px
+                display: inline
+
+                a, a:visited
+                    text-decoration: none
+                    color: #3a3a3a
+                    letter-spacing: 1px
+                    display: block
+                    padding: 0px 10px 0px 10px
+
+                    &:hover
+                        background: $blue
+                        color: #ffffff
+
+                a.active, a.active:hover
+                    color: $blue
+                    cursor: default
+                    background: none
+
+/** TITLE
+header
+    background: image-url("billboard.jpg") no-repeat center center #1a1a1a
+    height: 190px
+    min-width: 940px
+    margin: 0 auto
+    overflow: hidden
+    border-bottom: 4px solid $blue
+
+    .cover
+        height: 190px
+
+    h2
+        position: absolute
+        bottom: 0
+        color: #ffffff
+        font-family: $sans-serif
+        font-size: 48px
+        text-shadow: 2px 2px 1px #707070
+        height: 43px
+        float: left
+        margin: 0px 0px 13px 10px
+
+/* Subnavbar
+#subnavbar
+    margin: 0
+    font-size: 0.8em
+    font-weight: 600
+    text-transform: uppercase
+    font-family: $sans-serif
+    position: absolute
+    bottom: 0
+    right: 0
+
+    li
+        list-style: none
+        float: left
+        display: inline
+        margin: 0px
+
+        a, a:visited
+            text-decoration: none
+            color: #ffffff
+            letter-spacing: 1px
+            display: block
+            padding: 0px 10px 15px 10px
+            text-shadow: 0px 0px 10px #000000, 1px 1px 1px #000000, 0px 0px 5px #000000
+
+            &:hover
+                color: #ffffff
+                text-shadow: 0px 0px 10px $blue, 1px 1px 1px #000000, 0px 0px 5px $blue
+                background: image-url("subnav_arrow.png") no-repeat bottom center
+
+        a.active, a.active:hover
+            color: #ffffff
+            cursor: default
+            background: image-url("subnav_arrow.png") no-repeat bottom center
+            text-shadow: 0px 0px 10px #000000, 1px 1px 1px #000000, 0px 0px 5px #000000
+
+/* Footer
+footer
+    overflow: hidden
+    background: #efefef
+    height: 100px
+    min-width: 940px
+    margin: 0px
+    padding: 0px
+    display: block
+    color: #999999
+
+    .cover
+        border-bottom: 1px solid #cccccc
+        line-height: 30px
+        padding: 0px
+
+        p
+            width: 550px
+            float: left
+            font-size: 0.6em
+            font-family: $sans-serif
+            font-weight: 400
+            letter-spacing: 0.5px
+            color: #999999
+
+    #copyright
+        width: 940px
+        margin: 0 auto
+        text-align: center
+        line-height: 30px
+        font-size: 0.6em
+        font-family: $sans-serif
+        font-weight: 400
+        letter-spacing: 0.5px
+
+    em, a, a:hover
+        color: $blue
+        font-style: normal
+        text-decoration: none
+
+    ul
+        width: 350px
+        letter-spacing: 0px
+        float: right
+        list-style: none
+        text-align: right
+        font-size: 0.6em
+        font-family: $sans-serif
+        font-weight: 400
+        letter-spacing: 0.5px
+
+        li
+            display: inline
+
+            a
+                color: #999999
+                text-decoration: none
+
+                &:hover
+                    color: $blue
+                    text-decoration: none
+
+            a:active
+                color: $blue
+                text-decoration: none

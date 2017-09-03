@@ -1,0 +1,232 @@
+<header>
+  <div class="cover">
+    <h2><%= @member.first_name %> <%= @member.last_name %></h2>
+    <ul id="subnavbar">
+      <li><%= link_to "Home Index", :controller => :applicants, :action => :index %></li>
+      <li><%= link_to "Resume", :controller => :applicants, :action => :download_resume %></li>
+      <li><%= link_to "Cover Letter", :controller => :applicants, :action => :download_cover_letter %></li>
+      <li><%= link_to "Transcript", :controller => :applicants, :action => :download_transcript %></li>
+    </ul>
+  </div>
+</header>
+<div id="applicantWrapper">
+  <table>
+    <tr>
+      <td colspan="5">
+        <div style="text-align: left; width: 302px; position: absolute;">
+          <%= image_tag attachment_url(@member, :profile_image, :fill, 300, 300, format: "jpg") %>
+          <%= image_tag("default_profile.png") if !@member.profile_image %>
+        </div>
+        <table id="delibs_info" style="position: relative; text-align: left; margin-left: 380px; width: 500px">
+          <tr><td><b>Major: </b><%= @member.major %></br><b> Minor: </b><%= @member.minor %></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td><b>Class: </b><%= @member.class_name %></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td><b>Organizations: </b><%= @member.organizations %></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td><b>Interviewers: </b><%= @member.interviewers %></td></tr>
+          <tr><td></br></td></tr>
+          <tr><td></br></td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="categories">
+      <td colspan="5">Organizations</td>
+    </tr>
+    <tr>
+      <td colspan="5"><%= @member.organizations %></td>
+    </tr>
+    <tr id="categories">
+      <td colspan="5">Referred By</td>
+    </tr>
+    <tr>
+      <td colspan="5"><%= @member.referred %></td>
+    </tr>
+    <tr id="categories">
+      <td colspan="5" id="descriptions">Why are you interested in joining Alpha Kappa Psi?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.interest %></td>
+    </tr>
+    <tr id="categories">
+      <td colspan="5" id="descriptions">What can you contribute to the fraternity?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.contributions %></td>
+    </tr>
+  </table>
+</div>
+
+<div id="interviewInfoBtn" onClick="showInterviewInfo();">Interview Info</div>
+<div id="applicantWrapper">
+<table>
+    <tr id="categories">
+      <td colspan="5">Interviewer Opinions</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.interview_comments %></td>
+    </tr>
+
+    <tr id="categories">
+      <td colspan="5">Tell me about yourself.</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question1 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">What do you hope to gain from pursuing membership in Alpha Kappa Psi?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question2 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">What are strengths and weaknesses?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question3 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">Tell me about your past work or leadership experience and the skills you gained from them.</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question4 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">How would you encourage an unenthusiastic or struggling group member to put in more effort?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question5 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">Tell me about a time you disagreed with a team member and how you resolved the conflict.</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question6 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">What are your academic and professional goals for this year? And what steps are you taking to accomplish these goals?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question7 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">Where do you see yourself in 10 years?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question8 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">Admittance into the pledge process of Alpha Kappa Psi is a potential invitation in fraternity brotherhood. What can you bring to the fraternity that someone else can not?</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question9 %></td>
+    </tr>
+        <tr id="categories">
+      <td colspan="5">How would you define a good leader? Tell me about a specific time in which you exercised leadership.</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question10 %></td>
+    </tr>
+            <tr id="categories">
+      <td colspan="5">Tell me about a time when things didn’t go the way you wanted.</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.question11 %></td>
+    </tr>
+            <tr id="categories">
+      <td colspan="5">Curve Ball Question Used</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.curveballquestion %></td>
+    </tr>
+            <tr id="categories">
+      <td colspan="5">Curve Ball Question Response</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.curveballresponse %></td>
+    </tr>
+</table>
+</div>
+<br>
+<br>
+
+<div id="interviewInfoBtn" onClick="showInterviewInfo();">Group Interview Info</div>
+<div id="applicantWrapper">
+<table>
+<tr id="categories">
+      <td colspan="5">Group Interviewers</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.groupinterviewers %></td>
+    </tr>
+    <tr id="categories">
+      <td colspan="5">Group General Comments</td>
+    </tr>
+    <tr>
+      <td colspan="5" id="descriptions"><%= @member.groupcomments %></td>
+    </tr>
+</table>
+</div>
+
+
+<br> 
+<br>
+
+<div id="personalInfoBtn" onClick="showPersonalInfo();">Personal Info</div>
+<div id="applicantWrapper">
+  <table id="personalInfo">
+    <tr id="categories">
+      <td>Address</td>
+      <td>Apt.</td>
+      <td>City</td>
+      <td>State</td>
+      <td>Zip</td>
+    </tr>
+    <tr>
+      <td><%= @member.address %></td>
+      <td><%= @member.apt %></td>
+      <td><%= @member.city %></td>
+      <td><%= @member.state %></td>
+      <td><%= @member.zip %></td>
+    </tr>
+    <tr id="categories">
+      <td>Phone</td>
+      <td colspan="2">Contact Time</td>
+      <td colspan="2">Email</td>
+    </tr>
+    <tr>
+      <td><%= @member.phone %></td>
+      <td colspan="2"><%= @member.contact_time %></td>
+      <td colspan="2"><%= @member.email %></td>
+    </tr>
+    <tr id="categories">
+      <td>Employment Status</td>
+      <td colspan="2">Employer</td>
+      <td colspan="2">Employment Hours</td>
+    </tr>
+    <tr>
+      <td><%= @member.employment %></td>
+      <td colspan="2"><%= @member.employment_by %></td>
+      <td colspan="2"><%= @member.hours %></td>
+    </tr>
+    <tr id="categories">
+      <td colspan="2">G.P.A.</td>
+      <td colspan="3">Graduation Date</td>
+    </tr>
+    <tr>
+      <td colspan="2"><%= @member.gpa %></td>
+      <td colspan="3"><%= @member.graduation_date %></td>
+    </tr>
+    <tr id="categories">
+      <td colspan="5">How they found out about AKPsi</td>
+    </tr>
+    <tr><td id="descriptions"><%= "Chalkboard Announcements" if @member.chalkboard == true %></td></tr>
+    <tr><td id="descriptions"><%= "Classroom Announcements" if @member.classroom == true %></td></tr>
+    <tr><td id="descriptions"><%= "Flyers & Tabling" if @member.flyers == true %></td></tr>
+    <tr><td id="descriptions"><%= "Friend" if @member.friend == true %></td></tr>
+    <tr><td id="descriptions"><%= "Other: #{@member.other}" if @member.other.blank? == false%></td></tr>
+  </table>
+</div>

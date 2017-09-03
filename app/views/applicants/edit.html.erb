@@ -1,0 +1,57 @@
+<div style="margin-top: 30px;" id="membershipWrapper">
+  <%= form_for @member, { :url => applicant_path } do |f| %>
+    <%= f.label :profile_image %>
+    <%= f.attachment_field :profile_image %>
+    <%= f.label :interviewers %>
+    <%= f.text_field :interviewers, :value => @member.interviewers %>
+    <%= f.label :interview_comments %>
+    <%= f.text_area :interview_comments, :value => @member.interview_comments %>
+
+    <%= f.label :question1, 'Tell me about yourself.' %>
+    <%= f.text_area :question1 %>
+
+    <%= f.label :question2, 'What do you hope to gain from pursuing membership in Alpha Kappa Psi?' %>
+    <%= f.text_area :question2 %>   
+
+    <%= f.label :question3, 'What are strengths and weaknesses?' %>
+    <%= f.text_area :question3 %>
+
+    <%= f.label :question4, 'Tell me about your past work or leadership experience and the skills you gained from them.' %>
+    <%= f.text_area :question4 %>
+
+    <%= f.label :question5, 'How would you encourage an unenthusiastic or struggling group member to put in more effort?' %>
+    <%= f.text_area :question5 %>
+
+    <%= f.label :question6, 'Tell me about a time you disagreed with a team member and how you resolved the conflict.' %>
+    <%= f.text_area :question6 %>
+
+    <%= f.label :question7, 'What are your academic and professional goals for this year? And what steps are you taking to accomplish these goals?' %>
+    <%= f.text_area :question7 %>
+
+    <%= f.label :question8, 'Where do you see yourself in 10 years?' %>
+    <%= f.text_area :question8 %>
+
+    <%= f.label :question9, 'Admittance into the pledge process of Alpha Kappa Psi is a potential invitation in fraternity brotherhood. What can you bring to the fraternity that someone else can not?' %>
+    <%= f.text_area :question9 %>
+
+    <%= f.label :question10, 'How would you define a good leader? Tell me about a specific time in which you exercised leadership.' %>
+    <%= f.text_area :question10 %>
+
+    <%= f.label :question11, 'Tell me about a time when things didn’t go the way you wanted.' %>
+    <%= f.text_area :question11 %>
+
+    <%= f.label :curveballquestion, 'Curve Ball Question Used' %>
+    <%= f.text_area :curveballquestion %>
+
+    <%= f.label :curveballresponse, 'Curve Ball Response' %>
+    <%= f.text_area :curveballresponse %>
+
+    <%= f.label :groupinterviewers, 'Group Interviewer Names' %>
+    <%= f.text_field :groupinterviewers %>
+
+    <%= f.label :groupcomments, 'Group General Comments' %>
+    <%= f.text_area :groupcomments %>
+
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>

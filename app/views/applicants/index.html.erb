@@ -1,0 +1,35 @@
+<header>
+  <div class="cover">
+    <h2>Applicants</h2>
+  </div>
+</header>
+<div id="tableWrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Class</th>
+        <th>Major</th>
+        <th>Referral</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @membership_form.each do |data| %>
+        <tr>
+          <td><%= data.last_name %></td>
+          <td><%= data.first_name %></td>
+          <td><%= data.class_name %></td>
+          <td><%= data.major %></td>
+          <td><%= data.referred %></td>
+          <td><%= button_to "Profile", applicant_path(:id => data.id), :method => :get %></td>
+          <td><%= button_to "Interview Comments", edit_applicant_path(:id => data.id), :method => :get %></td>
+          <td><% button_to "Delete", applicant_path(:id => data.id), :method => :delete %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<div>

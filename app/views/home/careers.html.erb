@@ -1,0 +1,86 @@
+<header>
+  <div class="cover">
+    <h2>Careers</h2>
+    <ul id="subnavbar">
+      <li><%= link_to "History", about_path, {:class => add_active_class_if("/about")}%></li>
+      <li><%= link_to "Careers", careers_path, {:class => add_active_class_if("/careers")}%></li>
+    </ul>
+  </div>
+</header>
+<div id="yearscontainer">
+  <ul id="years">
+    <li id="career_2015" class="button_active" onClick="changeTable2015();">2015</li>
+    <li id="career_2014" onClick="changeTable2014();">2014</li>
+    <li id="career_2013" onClick="changeTable2013();">2013</li>
+  </ul>
+</div>
+<div id="tableWrapper">
+  <table id="table_2015">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employer</th>
+        <th>Industry</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @alumni_career.each do |data| %>
+        <% if data.graduation_year == 2015 %>
+          <tr>
+            <td><%= data.name %></td>
+            <td><%= data.employer %></td>
+            <td><%= data.industry %></td>
+            <td><%= data.location %></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+  <table id="table_2014">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employer</th>
+        <th>Industry</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @alumni_career.each do |data| %>
+        <% if data.graduation_year == 2014 %>
+          <tr>
+            <td><%= data.name %></td>
+            <td><%= data.employer %></td>
+            <td><%= data.industry %></td>
+            <td><%= data.location %></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+  <table id="table_2013">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employer</th>
+        <th>Industry</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @alumni_career.each do |data| %>
+        <% if data.graduation_year == 2013 %>
+          <tr>
+            <td><%= data.name %></td>
+            <td><%= data.employer %></td>
+            <td><%= data.industry %></td>
+            <td><%= data.location %></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<div id="more_companies">
+</div>

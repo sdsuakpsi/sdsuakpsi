@@ -1,0 +1,43 @@
+<div id="membershipWrapper">
+  <%= form_for @business, { :url => ivconnect_path } do |f| %>
+    <%= f.label :logo_image_id, "Logo" %>
+    <%= f.text_field :logo_image_id, :value => @business.logo_image_id %>
+    <%= f.label :profile_image_id, "Profile Image" %>
+    <%= f.text_field :profile_image_id, :value => @business.profile_image_id %>
+    <%= f.label :menu_image_id, "Menu Image" %>
+    <%= f.text_field :menu_image_id, :value => @business.menu_image_id %>
+    <%= f.label :name, "Name" %>
+    <%= f.text_field :name, :value => @business.name %>
+    <%= f.label :address, "Address" %>
+    <%= f.text_field :address, :value => @business.address %>
+    <%= f.label :phone, "Phone" %>
+    <%= f.text_field :phone, :value => @business.phone %>
+    <%= f.label :email, "Email" %>
+    <%= f.text_field :email, :value => @business.email %>
+    <%= f.label :service, "Type (Dining, Service, Lifestyle)" %>
+    <%= f.text_field :service, :value => @business.service %>
+    <%= f.label :category, "Category (ie. Asian Fusion)" %>
+    <%= f.text_field :category, :value => @business.category %>
+    <%= f.label :monday_hours, "Monday Hours" %>
+    <%= f.text_field :monday_hours, :value => @business.monday_hours %>
+    <%= f.label :tuesday_hours, "Tuesday Hours" %>
+    <%= f.text_field :tuesday_hours, :value => @business.tuesday_hours %>
+    <%= f.label :wednesday_hours, "Wednesday Hours" %>
+    <%= f.text_field :wednesday_hours, :value => @business.wednesday_hours %>
+    <%= f.label :thursday_hours, "Thursday Hours" %>
+    <%= f.text_field :thursday_hours, :value => @business.thursday_hours %>
+    <%= f.label :friday_hours, "Friday Hours" %>
+    <%= f.text_field :friday_hours, :value => @business.friday_hours %>
+    <%= f.label :saturday_hours, "Saturday Hours" %>
+    <%= f.text_field :saturday_hours, :value => @business.saturday_hours %>
+    <%= f.label :sunday_hours, "Sunday Hours" %>
+    <%= f.text_field :sunday_hours, :value => @business.sunday_hours %>
+    <%= f.label :description, "Description" %>
+    <%= f.text_area :description, :value => @business.description %>
+    <%= f.label :one_time_deal, "One Time Deal" %>
+    <%= f.text_area :one_time_deal, :value => @business.one_time_deal %>
+    <%= f.label :recurring_deal, "Recurring Deal" %>
+    <%= f.text_area :recurring_deal, :value => @business.recurring_deal %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>

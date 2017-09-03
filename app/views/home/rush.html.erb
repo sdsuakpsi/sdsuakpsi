@@ -1,0 +1,81 @@
+<header>
+	<div class="cover">
+		<h2>Rush</h2>
+		<ul id="subnavbar">
+			<li><%= link_to "Rush Schedule", rush_path, {:class => add_active_class_if("/rush")}%></li>
+      		<li><%= link_to "RSVP", ""%></li>
+			<li><%= link_to "Membership Application", membership_path, {:class => add_active_class_if("/membership")}%></li>
+		</ul>
+	</div>
+</header>
+<div id="schedule">
+	<div class="dates">
+		<div class="cover">
+			<dl>
+				<dt>Meet the Chapter</dt>
+				<dd>6 P.M. @ Student Resource Building, Multipurpose Room</dd>
+				<dd>Join us and learn about Alpha Kappa Psi, the world's premier co-ed professional business fraternity.</dd>
+			</dl>
+			<ul>
+				<li>Monday</li>
+				<li>October 2nd</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dates">
+		<div class="cover">
+			<dl>
+				<dt>Professional Night</dt>
+				<dd>8 P.M. @ Student Resource Building, Multipurpose Room</dd>
+				<dd>See the professional side of our fraternity with our guest speaker and panel. Business casual attire is preferred.
+				</dd>
+			</dl>
+			<ul>
+				<li>Tuesday</li>
+				<li>October 3rd</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dates">
+		<div class="cover">
+			<dl>
+				<dt>Philanthropy Night</dt>
+				<dd>7 P.M. @ Santa Rosa Lounge</dd>
+				<dd>Give a helping hand to our local community while getting acquainted with the brothers of Alpha Kappa Psi.</dd>
+			</dl>
+			<ul>
+				<li>Wednesday</li>
+				<li>October 4th</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dates">
+		<div class="cover">
+			<dl>
+				<dt>Brotherhood Night</dt>
+				<dd>6:30 P.M. @ 66 Oceanside Del Playa</dd>
+				<dd>Come mingle with our brothers, enjoy some food, and get to know more about us!</dd>
+			</dl>
+			<ul>
+				<li>Thursday</li>
+				<li>October 5th</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dates">
+		<div class="cover">
+			<dl>
+				<dt>Formal Interviews</dt>
+				<dd>Career Services Center</dd>
+				<dd>Please bring one copy of your cover letter, resume, and UCSB transcript. Business professional attire required. Sign up at any rush event!</dd>
+			</dl>
+			<ul>
+				<li>Thursday &#38; Friday</li>
+				<li>October 5th &#38; October 6th</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="rushending">
+	<p class="linkclickblk">Learn more <%= link_to "About", about_path %> us, meet our <%= link_to "Brothers", brothers_path %> or <%= link_to "Contact", contact_path %> us if you have any questions.</p>
+</div>

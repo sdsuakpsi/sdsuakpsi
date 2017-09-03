@@ -1,0 +1,74 @@
+<header>
+  <div class="cover">
+    <h2>Rush Sign-In</h2>
+  </div>
+</header>
+<div id="membershipWrapper">
+  <div id="notice">
+    <%= notice %>
+  </div>
+  <%= form_for @signin, url: {action: "create"} do |f| %>
+    <div id="stageleft">
+      <%= f.label :first_name, "First Name" %>
+      <%= f.text_field :first_name %>
+    </div>
+    <div id="stageright">
+      <%= f.label :last_name, "Last Name" %>
+      <%= f.text_field :last_name %>
+    </div>
+    <%= f.label :major, "Major" %>
+    <%= f.text_field :major %>
+    <div id="stageleft">
+      <%= f.label :phone, "Phone Number" %>
+      <%= f.text_field :phone %>
+    </div>
+    <div id="stageright">
+      <%= f.label :email, "Email Address" %>
+      <%= f.text_field :email %>
+    </div>
+    <%= f.label "Class Standing" %>
+    <div id="checkbox">
+      <%= f.label :freshman, "Freshman" %>
+      <%= f.check_box :freshman %>
+      <%= f.label :sophomore, "Sophomore" %>
+      <%= f.check_box :sophomore %>
+      <%= f.label :junior, "Junior" %>
+      <%= f.check_box :junior %>
+      <%= f.label :senior, "Senior" %>
+      <%= f.check_box :senior %>
+      <%= f.label :transfer, "Transfer" %>
+      <%= f.check_box :transfer %>
+    </div>
+    <%= f.label "What rush week events have you attended?" %>
+    <div id="checkbox">
+      <%= f.label :info_night, "Information Night" %>
+      <%= f.check_box :info_night %>
+      <%= f.label :pro_night, "Professional Night" %>
+      <%= f.check_box :pro_night %>
+      <%= f.label :phil_night, "Philanthropy Night" %>
+      <%= f.check_box :phil_night %>
+      <% f.label :date_night, "Speed-Dating Night" %>
+      <% f.check_box :date_night %>
+      <%= f.label :bro_night, "Brotherhood Night" %>
+      <%= f.check_box :bro_night %>
+    </div>
+    <%= f.label "How did you hear about our rush events?" %>
+    <div id="checkbox">
+      <%= f.label :tabling_flyering, "Tabling/Flyering" %>
+      <%= f.check_box :tabling_flyering %>
+      <%= f.label :department_email, "Email" %>
+      <%= f.check_box :department_email %>
+      <%= f.label :facebook, "Facebook" %>
+      <%= f.check_box :facebook %>
+      <%= f.label :insta_twitter, "Instagram/Twitter" %>
+      <%= f.check_box :insta_twitter %>
+    </div>
+    <div id="other">
+      <%= f.label :other, "Other" %>
+      <%= f.text_field :other %>
+    </div>
+    <%= f.label "Encouraged by a certain person to come out today? If so, please list their name here." %>
+    <%= f.text_field :referred_by %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>

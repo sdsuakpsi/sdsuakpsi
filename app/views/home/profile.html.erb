@@ -1,0 +1,46 @@
+<!-- <header>
+	<div class="cover">
+		<h2 id="brothers">Brothers</h2>
+	</div>
+</header>
+<div id="profile">
+
+
+	<img src="/images/brothers/profile/{{ $profile->first_name }}{{ $profile->last_name }}.png" alt="{{ $profile->first_name }} {{ $profile->last_name }}">
+	<h3>{{ $profile->first_name }} {{ $profile->last_name }}</h3>
+	<h4>{{ $profile->nickname }}</h4>
+
+	<p>{{ $profile->major }}</p>
+	<p><span>Date of Graduation</span> {{ $profile->date_of_graduation }}</p>
+
+	<ul>
+		<li><a href="{{ $profile->linkedin }}">LinkedIn</a></li>
+		<li><a href="/brothers/{{ $profile->profile }}/resume">Resume</a></li>
+	</ul>
+
+	@foreach( $experiences as $experience )
+	<div class="experience">
+		<dl>
+			<dt>{{ $experience->position }}</dt>
+			<dd>{{ $experience->place_of_work }}, {{ $experience->location }}</dd>
+			<dd>{{ $experience->start_period }} - {{ $experience->end_period }}</dd>
+			<dd>{{ $experience->description }}</dd>
+		</dl>
+	</div>
+	@endforeach
+
+
+	<dl class="info">
+		<dt>Skills:</dt>
+		<dd>{{ $profile->skills }}</dd>
+
+		<dt>Interests:</dt>
+		<dd>{{ $profile->interests }}</dd>
+	</dl>
+	<p id="dessert">Favorite Dessert: <span>{{ $profile->dessert }}</span></p>
+
+	<blockquote><p>"{{ $profile->quote }}"<span>{{ $profile->author }}</span></p></blockquote>
+
+
+</div>
+ -->

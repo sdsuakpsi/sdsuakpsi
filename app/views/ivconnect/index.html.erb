@@ -1,0 +1,28 @@
+<div id="connectHeader">
+  <div class="cover">
+    <h2>The I.V. Connect</h2>
+    <h3>The Official Isla Vista Discount Card</h3>
+  </div>
+</div>
+<div id="connectInfo">
+  The IV Connect card provides you with great deals across Isla Vista and SB. From BOGOFs to deals on haircuts, start saving today. The Card is only $10 and pays for itself within a couple of purchases. Please click <%= link_to "here", "https://docs.google.com/forms/d/15C6TS9elnK9NrD7m0UIufHZwyJMwrwJWgvoBnWyzh_4/viewform"%> to preorder your card today!</br></br>
+  <b>Card Expiration Date: 9/1/16</b>
+</div>
+<div id="menuWrapper">
+  <div>
+    <%= link_to "Dining", ivconnect_dining_path, {:id => "dining"} %>
+  </div>
+  <div>
+    <%= link_to "Service", ivconnect_service_path, {:id => "service"} %>
+  </div>
+  <div>
+    <%= link_to "Lifestyle", ivconnect_lifestyle_path, {:id => "lifestyle"} %>
+  </div>
+  <div id="subscriberForm">
+    <b>Subscribe to our emailing list for weekly deals!</b>
+    <%= form_for(@subscriber) do |f| %>
+      <%= f.text_field :email %>
+      <%= f.submit "Subscribe" %>
+    <% end %>
+  </div>
+</div>

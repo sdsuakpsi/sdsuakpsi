@@ -1,0 +1,1772 @@
+@import _reset
+@import _foundation
+@import _pictures
+
+/** HOME PAGE
+#billboard
+    margin: 0 auto
+    text-align: center
+    overflow: hidden
+    height: 600px
+
+    /**border-bottom: 4px solid $blue
+    /**background: image-url("s16_billboard.png") bottom no-repeat
+    background-size: 100%
+
+    a, a:visited
+        font-size: 0.9em
+        font-weight: 600
+        font-family: $sans-serif
+        text-transform: uppercase
+        line-height: 60px
+        letter-spacing: 1px
+        text-decoration: none
+        color: #000000
+        padding: 13px 15px
+        background: #ffffff
+        border-radius: 10px
+
+        &:hover
+            color: #efefef
+            background: $blue
+
+#rushlink
+    position: absolute
+    top: 170px
+    width: 100%
+    margin: 0 auto
+    z-index: 100
+
+    h2
+        text-align: center
+        font-size: 100px
+        font-family: $lobster
+        text-transform: capitalize
+        color: #f7f7f7
+        width: 100%
+
+        span
+            font-size: 30px
+            font-family: $serif
+
+#intro
+    background: #ffffff
+    min-width: 940px
+    height: auto
+    margin: 0 auto
+    text-align: center
+    padding: 0px 0px 40px 0px
+
+    .cover
+        display: inline-block
+
+    h1
+        padding: 40px 0px 0px 0px
+        font-size: 2em
+        font-weight: 700
+        font-family: $sans-serif
+        text-transform: uppercase
+        line-height: 60px
+        letter-spacing: 1.5px
+        color: #303030
+
+    h3
+        padding: 0px
+        margin: (-40px) 0px 0px 0px
+        font-size: 0.95em
+        font-weight: 400
+        font-family: $sans-serif
+        text-transform: uppercase
+        line-height: 60px
+        letter-spacing: 1px
+        color: #666666
+
+    .cover
+        div
+            width: 28.89%
+            float: left
+            margin: 0px auto
+            padding: 2.22%
+
+            h4
+                text-align: center
+                text-transform: uppercase
+                margin: 0 auto
+                margin-top: 100px
+                padding: 0px
+                color: #666666
+
+            p
+                font-size: 0.8em
+                margin: 0 auto
+                margin-top: 15px
+                line-height: 20px
+                color: #363636
+                text-align: justify
+
+        #intro1
+            background: image-url("light_bulb.png") top center no-repeat
+
+        #intro2
+            background: image-url("community.png") top center no-repeat
+
+        #intro3
+            background: image-url("brother.png") top center no-repeat
+
+#president
+    background: #f5f5f5
+    min-width: 940px
+    padding: 50px 0px 50px 0px
+    text-align: center
+    clear: both
+
+    img
+        margin: (-60px) 0px 0px 0px
+        text-align: center
+
+    blockquote
+        width: 500px
+        font-size: 0.95em
+        margin: 20px auto
+        line-height: 20px
+        color: #363636
+        text-align: justify
+
+    dl
+        width: 500px
+        margin: 0 auto
+
+        dt
+            text-align: left
+            font-size: 0.85em
+            font-weight: 600
+            font-family: $sans-serif
+            text-transform: uppercase
+            margin: 0 auto
+            margin: 10px 0px 0px 0px
+            padding: 0px
+            color: #363636
+
+        dd
+            text-align: left
+            font-size: 0.7em
+            font-weight: 600
+            font-family: $sans-serif
+            text-transform: uppercase
+            margin: 0 auto
+            color: #666666
+            padding: 0px
+
+/** RUSH WEEK SCHEDULE
+#schedule
+    margin: 0 auto
+    width: 100%
+    min-width: 940px
+    background-color: #ffffff
+    float: left
+    margin: 0px
+    padding: 0px
+
+    .dates:nth-of-type(odd)
+        background-color: #f3f3f3
+
+    .dates:nth-of-type(even)
+        background-color: #f9f9f9
+
+    .dates
+        padding: 20px 0px
+        float: left
+        width: 100%
+        border-bottom: 1px dotted #cccccc
+        height: auto
+        overflow: hidden
+
+        ul
+            text-align: right
+            width: 36.17021%
+            margin: 0px
+            float: left
+
+            li:nth-of-type(1)
+                font-size: 0.8em
+                font-weight: 600
+                font-family: $sans-serif
+                text-transform: uppercase
+                line-height: 10px
+                letter-spacing: 0.5px
+                color: #202020
+
+            li:nth-of-type(2)
+                font-size: 1.4em
+                font-weight: 400
+                font-family: $sans-serif
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                color: $blue
+
+        dl
+            width: 60.6383%
+            text-align: left
+            float: right
+            margin: 0px
+            padding: 0px
+
+            dt
+                margin: (-3px) 0px 0px -1px
+                font-size: 1.7em
+                font-weight: 600
+                font-family: $sans-serif
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                color: #202020
+
+            dd:nth-of-type(1)
+                margin: 0px 0px 0px 0px
+                font-size: 0.8em
+                font-weight: 600
+                font-family: $sans-serif
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                color: #333333
+
+            dd:nth-of-type(2)
+                margin: 0px 0px 0px 3px
+                font-size: 0.8em
+                font-weight: 400
+                font-family: $sans-serif
+                line-height: 15px
+                letter-spacing: 0.5px
+                color: #6d6d6d
+                margin: 5px 0px 0px 0px
+                width: 425px
+                font-family: "Bitter", serif
+
+#rushending
+    margin: 0px auto
+    width: 100%
+    min-width: 940px
+    padding: 25px 0px
+    display: block
+    text-align: center
+    overflow: hidden
+    background: image-url("about/contact_bg.png") repeat-x center center
+    border-bottom: 1px dotted #303030
+
+/** ABOUT PAGE
+//HISTORY
+#founderquote
+    background: #efefef
+    min-width: 940px
+    padding: 20px 0px 20px 0px
+    text-align: center
+    overflow: hidden
+    display: block
+
+    blockquote
+        width: 500px
+        font-size: 1.15em
+        margin: 50px auto
+        margin-bottom: 25px
+        line-height: 25px
+        color: #363636
+        text-align: justify
+
+    dl
+        width: 500px
+        margin: 0 auto
+        margin-bottom: 50px
+
+        dt
+            text-align: left
+            font-size: 1em
+            font-weight: 600
+            font-family: $sans-serif
+            text-transform: uppercase
+            margin: 0 auto
+            margin: 10px 0px 0px 0px
+            padding: 0px
+            color: #363636
+
+        dd
+            text-align: left
+            font-size: 0.8em
+            font-weight: 600
+            font-family: $sans-serif
+            text-transform: uppercase
+            margin: 0 auto
+            color: #666666
+            padding: 0px
+            letter-spacing: 0.5px
+
+#history
+    background: image-url("about/national_bg.png") bottom center no-repeat #000000
+    min-width: 940px
+    min-height: 550px
+    padding: 20px 0px 20px 0px
+    text-align: center
+    clear: both
+    display: block
+    margin: 0px
+
+    div
+        h3
+            width: 500px
+            text-align: left
+            float: right
+            margin: 20px 75px 0px 0px
+            color: $yellow
+
+        p
+            width: 500px
+            margin: 50px auto
+            margin-top: 5px
+            padding-right: 75px
+            line-height: 25px
+            color: #efefef
+            float: right
+            text-align: justify
+
+#values
+    background: image-url("about/websitecollage2.png") bottom center no-repeat
+
+    min-width: 940px
+    min-height: 1546px
+    height: auto
+    padding: 0px
+    margin: 0px auto
+    margin-bottom: 100px
+    text-align: center
+    clear: both
+    display: block
+
+    div
+        min-height: auto
+        padding: 20px 0px 20px 0px
+
+        h3
+            height: auto
+            margin: 0 auto
+            text-align: center
+            margin: 20px 0px 0px 0px
+            color: $blue
+
+        p
+            height: auto
+            width: 390px
+            margin: 0 auto
+            margin-top: 5px
+            margin-bottom: 20px
+            line-height: 25px
+            color: #000000
+            text-align: justify
+
+
+#chapterinfo
+    background: image-url("about/suit_bg.png") no-repeat center center #000000
+    min-width: 940px
+    max-height: 500px
+    height: auto
+    padding: 0px
+    margin: 0px
+    text-align: center
+    clear: both
+    display: block
+
+    div
+        padding: 20px 0px 20px 0px
+        width: 900px
+        height: auto
+
+        h3
+            height: auto
+            width: 900px
+            text-align: left
+            float: left
+            margin: 20px 0px 0px 0px
+            color: $yellow
+
+        p
+            height: auto
+            width: 350px
+            margin: 5px 0px 20px 0px
+            float: left
+            line-height: 25px
+            color: #efefef
+            text-align: justify
+
+#companies
+    background: image-url("about/companiesupdated.png") no-repeat center bottom #efefef
+    min-width: 940px
+    height: 1200px
+    padding: 0px 0px 90px 0px
+    margin: 0px 0px 50px
+    text-align: center
+    display: block
+    overflow: hidden
+
+    div
+        h3
+            height: auto
+            width: 250px
+            text-align: center
+            margin: 0 auto
+            margin-top: 75px
+            font-size: 2.25em
+            color: $blue
+
+    ul
+        height: 0px
+        width: 0px
+        display: none
+        text-indent: -9999em
+
+#aboutbrothers
+    background: image-url("about/brothers.png") no-repeat center bottom #efefef
+    height: 275px
+    min-width: 940px
+    margin: 0px auto
+    text-align: center
+    padding: 20px 0px 0px 0px
+
+#contactabout
+    background: image-url("about/contact_bg.png") repeat center center #000000
+    min-width: 940px
+    max-height: 200px
+    line-height: 200px
+    padding: 0px
+    margin: 0px
+    text-align: center
+    clear: both
+    display: block
+
+//SPONSORS
+#logic_monitor_logo
+    background: image-url("about/logic_monitor_logo.png") no-repeat center bottom #efefef
+    min-width: 940px
+    height: 70px
+    padding: 0px 0px 90px 0px
+    margin: 30px 0px 30px
+    text-align: center
+    display: block
+    overflow: hidden
+
+#novacoast_logo
+    background: image-url("about/novacoast_logo.png") no-repeat center bottom #efefef
+    min-width: 940px
+    height: 150px
+    padding: 0px 0px 0px 0px
+    margin: 30px 0px 30px
+    text-align: center
+    display: block
+    overflow: hidden
+
+#sponsor_blurb
+    background: image-url("about/contact_bg.png") repeat center center #000000
+    text-align: justify
+    width: auto
+    margin-left: auto
+    margin-right: auto
+    padding-right: 100px
+    padding-left: 100px
+    color: #ffffff
+    padding-top: 30px
+    padding-bottom: 30px
+    margin-bottom: 30px
+    font-family: $sans-serif
+    clear: both
+    display: block
+
+// CAREERS
+#yearscontainer
+    top: 45px
+    width: 250px
+    margin: 0px auto
+    padding: 30px 0px 30px 0px
+    font-family: $lobster
+    font-size: 1.2em
+    font-weight: 500
+    cursor: pointer
+    clear: both
+    float: center
+
+#years
+    width: 300px
+    padding: 0
+
+    li
+        display: inline
+        margin-right: 10px
+        margin-left: 10px
+        padding: 3px 5px 3px 5px
+        border: 2px solid $blue
+
+        &:hover
+            background-color: $blue
+            color: white
+
+.button_active
+    background-color: $blue
+    color: white
+    cursor: default
+
+
+#table_2015
+    display: table
+
+#table_2014
+    display: none
+
+#table_2013
+    display: none
+
+
+
+
+#more_companies
+    background: image-url("about/companiesupdated.png") no-repeat center bottom #efefef
+    min-width: 940px
+    height: 1080px
+    padding: 0px 0px 90px 0px
+    margin: 0px 0px 50px
+    text-align: center
+    display: block
+    overflow: hidden
+
+/** BROTHERS PAGE
+// ROSTER
+#roster
+    margin: 0 auto
+    width: 100%
+    min-width: 940px
+
+    h3
+        margin-top: 40px
+        line-height: 60px
+        color: #27c5f4
+        text-align: center
+
+    ul
+        width: 810px
+        margin: 0px auto
+        height: auto
+        text-align: center
+        overflow: hidden
+
+        a, a:visited
+            margin: 20px 5px 10px 5px
+            padding: 136px 0px 0px 0px
+            height: 40px
+            width: 125px
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            color: #333333
+            display: block
+            text-decoration: none
+            float: left
+            cursor: pointer
+            background-size: auto 130px
+            background-repeat: no-repeat
+
+            &:hover
+                color: $blue
+
+                em
+                    color: #333333
+
+            em
+                font-size: 0.75em
+                color: #666666
+                display: block
+                font-style: normal
+
+    ul:nth-of-type(1)
+        width: 680px
+
+    ul:nth-of-type(2)
+        width: 810px
+
+    ul:nth-of-type(3)
+        width: 550px
+
+    ul:nth-of-type(4)
+        width: 550px
+
+    ul:nth-of-type(5)
+        width: 810px
+
+a.composite-image
+    background-color: #efefef
+    background-position: 0px 0px
+
+a.composite-image:hover
+    background-position: (-125px) 0px
+
+// PROFILE PAGE
+#profile
+    width: 600px
+    margin: 0px auto
+    margin-top: 50px
+    margin-bottom: 100px
+    text-align: center
+
+    img
+        text-align: center
+        width: 200px
+        height: 250px
+        margin: 0 auto
+        margin-left: 200px
+        margin-right: 200px
+        margin-bottom: 20px
+
+    h3
+        text-align: center
+        color: $blue
+        font-weight: 600
+
+    h4
+        text-align: center
+        color: #333333
+        margin-bottom: 20px
+
+    p
+        margin: 0px auto
+        margin-bottom: 4px
+        float: left
+        text-align: center
+        display: block
+        width: 100%
+
+    p:nth-of-type(2)
+        font-style: italic
+        margin-bottom: 15px
+
+        span
+            color: #666666
+            text-transform: lowercase
+            font-weight: 400
+            font-size: 0.9em
+            font-style: italic
+
+        li:nth-of-type(2)
+            span
+
+    ul
+        float: left
+        margin: 0px auto
+        padding: 0px
+        height: 60px
+        position: relative
+        width: 100%
+
+        li
+            text-align: center
+            margin: 0px auto
+            position: relative
+            line-height: 30px
+            display: inline-block
+
+            a
+                margin: 0px 10px 0px 10px
+                font-size: 0.85em
+                font-weight: 600
+                text-transform: uppercase
+                font-family: $sans-serif
+                color: $blue
+                border-bottom: 2px solid $blue
+
+                &:hover
+                    color: #303030
+                    border-bottom: 2px solid #303030
+
+    .experience
+        padding: 20px 0px
+        margin: 0 auto
+        float: left
+        width: 600px
+        overflow: hidden
+
+        dl
+            width: 600px
+            text-align: left
+            margin: 0px
+            padding: 0px
+
+            dt
+                margin: (-3px) 0px 0px -1px
+                font-size: 1em
+                font-weight: 600
+                font-family: $sans-serif
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                color: $blue
+
+            dd:nth-of-type(1)
+                margin: 3px 0px
+                font-size: 0.9em
+                font-weight: 600
+                font-family: $sans-serif
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                color: #202020
+
+            dd:nth-of-type(2)
+                margin: 0px 0px 0px 0px
+                font-size: 0.8em
+                font-weight: 600
+                font-family: $sans-serif
+                font-style: italic
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                color: #555555
+
+            dd:nth-of-type(3)
+                font-size: 0.8em
+                font-weight: 400
+                line-height: 15px
+                letter-spacing: 0.5px
+                color: #6d6d6d
+                margin: 5px 0px 0px 0px
+                font-family: $serif
+
+    .info
+        padding: 10px 0px
+        margin: 0 auto
+        float: left
+        width: 600px
+        overflow: hidden
+        text-align: left
+
+        dt
+            margin: 15px 0px 2px
+            font-size: 0.9em
+            font-weight: 600
+            font-family: $sans-serif
+            text-transform: uppercase
+            letter-spacing: 0.5px
+            color: #202020
+
+        dd
+            font-size: 0.8em
+            font-weight: 400
+            line-height: 15px
+            letter-spacing: 0.5px
+            color: #6d6d6d
+            margin: 2px 0px 0px 0px
+            font-family: $serif
+
+    #dessert
+        float: left
+        text-align: left
+        font-size: 0.9em
+        font-weight: 600
+        font-family: $sans-serif
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        color: #202020
+        margin: 5px 0px 2px
+
+        span
+            text-transform: none
+            font-size: 1em
+            font-weight: 400
+            line-height: 15px
+            letter-spacing: 0.5px
+            color: #6d6d6d
+            margin: 2px 0px 0px 0px
+            font-family: $serif
+
+    blockquote
+        p
+            width: 500px
+            margin: 0px auto
+            padding: 60px 50px
+            color: #303030
+            text-align: center
+            font-size: 1em
+            line-height: 25px
+
+            span
+                height: auto
+                display: block
+                color: #999999
+                font-size: 0.75em
+                font-weight: 600
+                font-family: $sans-serif
+                text-transform: uppercase
+
+/** IVCONNECT
+
+#sendSubscription
+    display: block
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-top: 100px
+
+#connectInfo
+    width: 900px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 20px
+    font-family: $sans-serif
+    font-size: 20px
+    border: 1px solid $blue
+    text-align: center
+    padding: 10px 10px 10px 10px
+
+    b
+        color: #d3d3d3
+    a, a:hover
+        color: $blue
+
+#subscriberForm
+    b
+        color: $blue
+
+    input[type=text]
+        display: block
+        margin-left: auto
+        margin-right: auto
+        color: #202020
+        font-size: 0.8em
+        font-weight: 400
+        font-family: $serif
+        background: lighten(#efefef, 2%)
+        -webkit-box-shadow: none
+        box-shadow: none
+        border: 1px solid #cccccc
+        border-radius: 3px
+        width: 628px
+
+        &:hover
+            border: 1px solid rgba(30, 197, 244, 0.6)
+
+        &:focus
+            outline: none
+            border: 1px solid rgba(39, 197, 244, 0.8)
+            -webkit-box-shadow: 0 0 8px rgba(39, 197, 244, 0.6)
+            box-shadow: 0 0 3px rgba(39, 197, 244, 0.6)
+
+    input[type=submit]
+        width: 100px
+        height: 30px
+        background: #e6e6e6
+        font-weight: 600
+        font-family: $sans-serif
+        font-size: 0.4em
+        text-transform: uppercase
+        color: #c0c0c0
+        border: 0px
+        cursor: pointer
+        margin-top: 10px
+
+        &:hover
+            border: 0px
+            color: #efefef
+            background: $blue
+
+#connectHeader
+    background: image-url("ivconnect_billboard.png") no-repeat center center #1a1a1a
+    height: 350px
+    min-width: 940px
+    margin: 0 auto
+    overflow: hidden
+    border-bottom: 4px solid $blue
+
+    .cover
+        height: 350px
+
+    h2
+        bottom: 0
+        color: $blue
+        font-family: $lobster
+        font-size: 75px
+        text-shadow: 2px 3px white
+        height: 43px
+        margin-top: 150px
+        margin-bottom: 35px
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        text-transform: capitalize
+
+    h3
+        bottom: 0
+        color: #efefef
+        font-family: $sans-serif
+        text-align: center
+        width: 600px
+        margin-left: auto
+        margin-right: auto
+
+#diningHeader
+    background: image-url("dining_billboard.jpg") no-repeat center center #1a1a1a
+    height: 250px
+    min-width: 940px
+    margin: 0 auto
+    overflow: hidden
+    border-bottom: 4px solid $blue
+
+    .cover
+        height: 250px
+
+    h2
+        position: absolute
+        bottom: 0
+        color: $blue
+        font-family: $lobster
+        font-size: 48px
+        text-shadow: 2px 3px white
+        height: 43px
+        float: left
+        margin: 0px 0px 13px 10px
+        text-transform: capitalize
+
+#serviceHeader
+    background: image-url("service_billboard.jpg") no-repeat center center #1a1a1a
+    height: 250px
+    min-width: 940px
+    margin: 0 auto
+    overflow: hidden
+    border-bottom: 4px solid $blue
+
+    .cover
+        height: 250px
+
+    h2
+        position: absolute
+        bottom: 0
+        color: $blue
+        font-family: $lobster
+        font-size: 48px
+        text-shadow: 2px 3px white
+        height: 43px
+        float: left
+        margin: 0px 0px 13px 10px
+        text-transform: capitalize
+
+#lifestyleHeader
+    background: image-url("lifestyle_billboard.jpg") no-repeat center center #1a1a1a
+    height: 250px
+    min-width: 940px
+    margin: 0 auto
+    overflow: hidden
+    border-bottom: 4px solid $blue
+
+    .cover
+        height: 250px
+
+    h2
+        position: absolute
+        bottom: 0
+        color: $blue
+        font-family: $lobster
+        font-size: 48px
+        text-shadow: 2px 3px white
+        height: 43px
+        float: left
+        margin: 0px 0px 13px 10px
+        text-transform: capitalize
+
+#menuWrapper
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    font-family: $lobster
+    font-size: 2.5em
+    margin-top: 45px
+    width: 1000px
+    a
+        color: #efefef
+
+        &:hover
+            color: $blue
+
+    #dining
+        float: left
+        margin: 0px 15px 40px 0px
+        width: 300px
+        border: 3px solid $blue
+        padding: 190px 0px 190px 0px
+        background-image: image-url("dining.png")
+
+        &:hover
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("dining.png")
+
+    #service
+        float: left
+        margin: 0px 15px 40px 15px
+        width: 300px
+        border: 3px solid $blue
+        padding: 190px 0px 190px 0px
+        background-image: image-url("service.png")
+
+        &:hover
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("service.png")
+
+    #lifestyle
+        float: left
+        margin: 0px 0px 40px 15px
+        width: 300px
+        border: 3px solid $blue
+        padding: 190px 0px 190px 0px
+        background-image: image-url("lifestyle.png")
+
+        &:hover
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("lifestyle.png")
+
+#directory
+    width: 900px
+    margin-left: auto
+    margin-right: auto
+
+.business
+    vertical-align: top
+    display: inline-block
+    text-align: center
+    width: 220px
+
+    img
+        width: 200px
+        height: 200px
+        border: 1px solid $blue
+        margin-top: 25px
+
+    .caption
+        display: block
+
+        a
+            font-family: $sans-serif
+            font-size: 1.5em
+            color: black
+
+            &:hover
+                color: $blue
+
+#profileWrapper
+    width: 1050px
+    margin-left: auto
+    margin-right: auto
+
+    #profileImage
+        vertical-align: top
+        display: inline-block
+        width: 550px
+        float: left
+
+        img
+            width: 500px
+            border: 1px solid $blue
+            margin-top: 25px
+
+    #hours
+        display: inline-block
+        width: 350px
+        float: left
+        margin-top: 25px
+        line-height: 110%
+
+        h3
+            border-bottom: 1px solid $blue
+            color: $blue
+
+        b
+            font-weight: bold
+            color: #2a2a2a
+            font-family: $sans-serif
+
+    #info
+        display: inline-block
+        width: 500px
+        float: left
+        font-family: $sans-serif
+        margin-top: 25px
+
+        b
+            color: $blue
+
+
+    #businessDescription
+        margin-top: 25px
+        border: 1px solid $blue
+        font-family: $sans-serif
+        float: left
+        width: 950px
+        padding: 10px 25px 10px 25px
+        line-height: 150%
+
+        h3
+            color: $blue
+
+
+
+
+
+/** CONTACT
+
+/** CONTACT
+#contactintro
+    background: #efefef
+    min-width: 940px
+    width: 900px
+    height: auto
+    margin: 0 auto
+    text-align: center
+    display: block
+    overflow: hidden
+
+    h3
+        padding: 40px 0px 0px 0px
+        line-height: 30px
+        color: #303030
+
+    p
+        color: #9c9c9c
+
+    #socialmedia
+        z-index: 99
+        margin: 0 auto
+        margin-top: 25px
+        width: auto
+        font-weight: 600
+        font-family: $sans-serif
+        font-size: 0.8em
+        text-transform: uppercase
+        display: inline-block
+
+        li
+            display: inline
+
+        #phone, #contactemail, li a#facebook, li a#twitter, li a#instagram
+            margin: 30px 20px 0px 20px
+            width: auto
+            float: left
+            position: relative
+            color: #cccccc
+            text-decoration: none
+
+        #phone, #contactemail
+            color: #27c5f4
+
+        a#facebook:hover, li a#twitter:hover, li a#instagram:hover
+            color: #27c5f4
+
+        span
+            height: 22px
+            width: 22px
+            margin: 0 auto
+            display: block
+            text-indent: -9999em
+            padding-bottom: 20px
+            background-position: 0px 0px
+            background-repeat: no-repeat
+
+        #phone span
+            background-image: image-url("phone.png")
+            background-position: (-22px) 0px
+
+        #contactemail span
+            background-image: image-url("mail.png")
+            background-position: (-22px) 0px
+
+        li a#twitter span
+            background-image: image-url("twitter.png")
+
+        a:hover#twitter span
+            background-position: (-22px) 0px
+
+        li a#facebook span
+            background-image: image-url("facebook.png")
+
+        a#facebook:hover span
+            background-position: (-22px) 0px
+
+        li a#instagram span
+            background-image: image-url("instagram.png")
+
+        a#instagram:hover span
+            background-position: (-22px) 0px
+
+#contactWrapper
+    width: 640px
+    padding: 60px 150px 30px 150px
+    margin: 0px auto
+    margin-top: 50px
+    clear: both
+    float: left
+    border-bottom: 1px dashed #cccccc
+    border-top: 1px dashed #cccccc
+    text-align: center
+
+    h4#messageicon
+        background: image-url("message.png") no-repeat -30px 0
+        height: 30px
+        width: 30px
+        margin: 0 auto
+        margin-top: -75px
+        margin-bottom: 20px
+        display: block
+        text-indent: -99999em
+
+    h4#messageicon
+        background-position: (-30px) 0px
+
+    &:hover
+        border-bottom: 1px dashed #27c5f4
+        border-top: 1px dashed #27c5f4
+
+        h4#messageicon
+            background-position: 0px 0px
+
+    p#success
+        padding: 10px
+        overflow: hidden
+        background: lighten(#b4df99, 15%)
+        border: 1px solid darken(#b4df99, 5%)
+        border-radius: 3px
+        margin: 15px 0px
+        color: #666666
+
+    p#errorhead
+        padding: 10px
+        background: #ffb1b1
+        border: #eb6a6a solid 1px
+        border-radius: 3px
+        margin-bottom: 15px
+        color: #000000
+
+    form
+        text-align: left
+
+        #stageleft
+            float: left
+            width: 300px
+            margin: 0px 15px 0px 0px
+
+            input, label
+                width: 298px
+
+        #stageright
+            float: left
+            width: 300px
+            margin: 0px 0px 0px 15px
+
+            input, label
+                width: 298px
+
+        label
+            display: inline-block
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            width: 100%
+            padding: 0px 0px 3px 0px
+            margin-top: 15px
+            color: #999999
+            text-align: left
+
+        label.checked
+            display: none
+            background: none
+            height: 0
+            width: 0
+            border: 0px
+            margin-top: 0px
+            padding: 0px
+            text-indent: -5000px
+
+        input[type=submit]
+            float: right
+            width: 150px
+            height: 30px
+            background: #e6e6e6
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            color: #c0c0c0
+            border: 0px
+            cursor: pointer
+            margin-top: 10px
+
+            &:hover
+                border: 0px
+                color: #efefef
+                background: $blue
+
+        input, textarea
+            overflow: hidden
+            display: block
+            color: #202020
+            font-size: 0.8em
+            font-weight: 400
+            font-family: $serif
+            background: lighten(#efefef, 2%)
+            -webkit-box-shadow: none
+            box-shadow: none
+            border: 1px solid #cccccc
+            border-radius: 3px
+            width: 628px
+
+        input
+            height: 30px
+            padding: 0px 5px 0px 5px
+            margin: 0px
+
+        textarea
+            height: 100px
+            padding: 5px 5px
+            margin: 0px 0px 0px
+            max-width: 628px
+
+        input:focus, textarea:focus
+            outline: none
+            border: 1px solid rgba(39, 197, 244, 0.8)
+            -webkit-box-shadow: 0 0 8px rgba(39, 197, 244, 0.6)
+            box-shadow: 0 0 8px rgba(39, 197, 244, 0.6)
+
+        input:hover, textarea:hover
+            border: 1px solid rgba(39, 197, 244, 0.8)
+
+        input.error, textarea.error
+            background: lighten($red, 50%)
+            border: lighten($red, 30%) solid 1px
+
+        input.error:hover, textarea.error:hover
+            border: 1px solid lighten($red, 10%)
+
+        input.error:focus, textarea.error:focus
+            outline: none
+            border: 1px solid lighten($red, 10%)
+            -webkit-box-shadow: 0 0 8px lighten($red, 30%)
+            box-shadow: 0 0 8px lighten($red, 30%)
+
+        label.error
+            width: auto
+            float: left
+            height: auto
+            color: $red
+            margin: 0px 0px -2px
+
+    em
+        color: #01b3b3
+
+    .requiredNote
+        margin: 20px 0px 20px
+        color: #333333
+        font-weight: bold
+
+#membershipWrapper
+    width: 640px
+    padding: 30px 150px 30px 150px
+    margin: 0px auto
+    clear: both
+    float: middle
+
+    form
+        text-align: left
+
+        #stageleft
+            float: left
+            width: 300px
+            margin: 0px 15px 0px 0px
+
+            input, label
+                width: 298px
+
+        #stageright
+            float: left
+            width: 300px
+            margin: 0px 0px 0px 15px
+
+            input, label
+                width: 298px
+
+        #stageone
+            float: left
+            width: 190px
+            margin: 0px 15px 0px 0px
+
+            input, label
+                width: 188px
+
+        #stagetwo
+            float: left
+            width: 190px
+            margin: 0px 15px 0px 15px
+
+            input, label
+                width: 188px
+
+        #stagethree
+            float: left
+            width: 190px
+            margin: 0px 0px 0px 15px
+
+            input, label
+                width: 188px
+
+        #other
+            float: left
+
+            input
+                width: 150px
+                height: 25px
+
+            label
+                float: right
+                margin-top: 5px
+                margin-left: 15px
+                width: 10px
+                font-size: 0.7em
+
+        label
+            display: inline-block
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            width: 100%
+            padding: 0px 0px 3px 0px
+            margin-top: 15px
+            color: #999999
+            text-align: left
+
+        label.checked
+            display: none
+            background: none
+            height: 0
+            width: 0
+            border: 0px
+            margin-top: 0px
+            padding: 0px
+            text-indent: -5000px
+
+        input[type=submit]
+            float: right
+            width: 150px
+            height: 30px
+            background: #e6e6e6
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            color: #c0c0c0
+            border: 0px
+            cursor: pointer
+            margin-top: 10px
+
+            &:hover
+                border: 0px
+                color: #efefef
+                background: $blue
+
+        input, textarea
+            overflow: hidden
+            display: block
+            color: #202020
+            font-size: 0.8em
+            font-weight: 400
+            font-family: $serif
+            background: lighten(#efefef, 2%)
+            -webkit-box-shadow: none
+            box-shadow: none
+            border: 1px solid #cccccc
+            border-radius: 3px
+            width: 628px
+
+        input
+            height: 30px
+            padding: 0px 5px 0px 5px
+            margin: 0px
+
+        #membership_form_class_name_freshman, #membership_form_class_name_sophomore, #membership_form_class_name_junior, #membership_form_class_name_senior, #membership_form_employment, #membership_form_chalkboard, #membership_form_classroom, #membership_form_flyers, #membership_form_friend, #signin_freshman, #signin_sophomore, #signin_junior, #signin_senior, #signin_transfer, #signin_info_night, #signin_pro_night, #signin_phil_night, #signin_date_night, #signin_bro_night, #signin_tabling_flyering, #signin_facebook, #signin_insta_twitter, #signin_department_email
+            width: 25px
+            height: 25px
+            padding: 0
+            margin: 0
+            vertical-align: bottom
+            position: relative
+            top: -1px
+            overflow: hidden
+
+        #checkbox
+            margin-top: 5px
+
+            label
+                float: right
+                margin-top: 5px
+                width: 600px
+                font-size: 0.7em
+
+        textarea
+            height: 100px
+            padding: 5px 5px
+            margin: 0px 0px 0px
+            max-width: 628px
+
+
+        input:focus, textarea:focus
+            outline: none
+            border: 1px solid rgba(39, 197, 244, 0.8)
+            -webkit-box-shadow: 0 0 8px rgba(39, 197, 244, 0.6)
+            box-shadow: 0 0 8px rgba(39, 197, 244, 0.6)
+
+        input:hover, textarea:hover
+            border: 1px solid rgba(39, 197, 244, 0.8)
+
+        input.error, textarea.error
+            background: lighten($red, 50%)
+            border: lighten($red, 30%) solid 1px
+
+        input.error:hover, textarea.error:hover
+            border: 1px solid lighten($red, 10%)
+
+        input.error:focus, textarea.error:focus
+            outline: none
+            border: 1px solid lighten($red, 10%)
+            -webkit-box-shadow: 0 0 8px lighten($red, 30%)
+            box-shadow: 0 0 8px lighten($red, 30%)
+
+        label.error
+            width: auto
+            float: left
+            height: auto
+            color: $red
+            margin: 0px 0px -2px
+
+    em
+        color: #01b3b3
+
+    .requiredNote
+        margin: 20px 0px 20px
+        color: #333333
+        font-weight: bold
+
+#tableWrapper
+    text-align: left
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+    margin-top: 15px
+    font-family: $sans-serif
+
+    table
+        width: 100%
+        max-width: 100%
+        background-color: transparent
+        border-spacing: 0px
+        border-collapse: collapse
+        margin-bottom: 30px
+
+        thead tr th
+            background: none
+            font-size: 1.1em
+            text-transform: uppercase
+            border-bottom-width: 2px
+            vertical-align: bottom
+            border-bottom: $blue 2px solid
+            padding: 0px 0px 3px 0px
+            font-weight: 600
+
+        tbody tr td
+            padding: 10px 0px 10px 0px
+            vertical-align: middle
+
+        input[type=submit]
+            float: right
+            width: auto
+            height: 22px
+            background: #e6e6e6
+            font-weight: 600
+            font-family: $sans-serif
+            font-size: 0.8em
+            text-transform: uppercase
+            color: #c0c0c0
+            border: 0px
+            cursor: pointer
+
+            &:hover
+                border: 0px
+                color: #efefef
+                background: $blue
+
+#notice
+    text-align: center
+    font-family: $sans-serif
+    color: $blue
+    text-transform: uppercase
+
+#parallax
+    margin: 0
+    padding: 0
+    perspective: 1px
+    transform-style: preserve-3d
+    height: 100%
+    overflow-y: scroll
+    overflow-x: hidden
+
+
+.slide
+    position: relative
+    padding: 25vh 10%
+    min-height: 100vh
+    width: 100vw
+    box-sizing: border-box
+    box-shadow: 0 -1px rgba(0, 0, 0, .7)
+    transform-style: inherit
+
+.slide:before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.slide, .slide:before
+    background: 50% 50% / cover
+
+#slide1
+    background: image-url("test/strohl3.jpg")
+    background-attachment: fixed
+
+#slide2:before
+    background: image-url("test/strohl1.jpg")
+    transform: translateZ(-1px) scale(2)
+    z-index: -1
+
+#slide3
+    background: image-url("test/strohl2.jpg")
+    background-attachment: fixed
+
+#slide4:before
+    background: image-url("test/strohl3.jpg")
+    transform: translateZ(-1px) scale(2)
+    z-index: -1
+
+/** APPLICANTS
+// SHOW
+#applicantWrapper
+    text-align: center
+    width: 70%
+    margin-top: 20px
+    margin-left: auto
+    margin-right: auto
+    font-family: $sans-serif
+
+    table
+        width: 100%
+        max-width: 100%
+        background-color: transparent
+        border-spacing: 0px
+        border-collapse: collapse
+
+#delibs_info
+    font-size: 24px
+    b
+        color: $blue
+        font-size: 1.2em
+
+
+
+#categories
+    font-size: 1.2em
+    color: $blue
+
+    td
+        padding: 50px 0px 5px 0px
+        border-bottom: 1px solid $blue
+
+#descriptions
+    text-align: left
+
+#interviewInfoBtn
+    margin-left: auto
+    margin-right: auto
+    margin-top: 40px
+    text-align: center
+    font-size: 1.2em
+    color: black
+    font-family: $lobster
+    cursor: pointer
+    border: 1px solid $blue
+    padding: 3px 5px 3px 5px
+    width: 150px
+
+    &:hover
+        color: white
+        background-color: $blue
+
+#personalInfoBtn
+    margin-left: auto
+    margin-right: auto
+    margin-top: 40px
+    text-align: center
+    font-size: 1.2em
+    color: black
+    font-family: $lobster
+    cursor: pointer
+    border: 1px solid $blue
+    padding: 3px 5px 3px 5px
+    width: 150px
+
+    &:hover
+        color: white
+        background-color: $blue
+
+#personalInfo
+    display: none
+
+#employmentInfo
+    dipslay: none
+
+#no_applications
+    margin-left: auto
+    margin-right: auto
+    margin-top: 40px
+    margin-bottom: 40px
+    font-size: 1.2em
+    width: 600px
+
+    p
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+
+#search-form
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    padding: 20px 5px 20px 5px
+
+input[type="text"]
+    display: block
+    margin: 0
+    width: 60%
+    margin: 10px auto 10px auto
+    font-family: sans-serif
+    font-size: 18px
+    appearance: none
+    box-shadow: none
+    border-radius: none
+    padding: 10px
+    border: solid 1px #dcdcdc
+    transition: box-shadow 0.3s, border 0.3s
+
+    &:focus
+        outline: none
+        border: solid 1px $blue
+        box-shadow: 0 0 5px 1px #969696
+
+#signin_info
+    text-align: center
+    width: 100%
+    font-family: sans-serif
+    margin-top: 75px
+
+    b
+        color: $blue

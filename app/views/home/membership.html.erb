@@ -1,0 +1,141 @@
+<header>
+  <div class="cover">
+    <h2>Application</h2>
+    <ul id="subnavbar">
+      <li><%= link_to "Rush Schedule", rush_path, {:class => add_active_class_if("/rush")}%></li>
+      <li><%= link_to "RSVP", "https://www.facebook.com/events/151062612011827/?notif_t=plan_user_joined&notif_id=1474173532499466"%></li>
+      <li><%= link_to "Membership Application", membership_path, {:class => add_active_class_if("/membership")}%></li>
+    </ul>
+  </div>
+</header>
+
+<!-- <div id="no_applications">
+  <p>We are not currently accepting applications but please look forward to our Spring 2016 Rush!</p>
+</div> -->
+
+<div id="membershipWrapper">
+  <div id="notice">
+    <%= notice %>
+  </div>
+  </br>
+  <p>
+    <em>Requirements:</br></br></em>
+    - Minimum 2.75 G.P.A. requirement</br>
+    - At least 2 more quarters here at UCSB
+  </p>
+  <%= form_for @membership_form, { :url => membership_path } do |f| %>
+    <div id="stageleft">
+      <%= f.label :last_name, "Last Name" %>
+      <%= f.text_field :last_name %>
+    </div>
+    <div id="stageright">
+      <%= f.label :first_name, "First Name" %>
+      <%= f.text_field :first_name %>
+    </div>
+    <%= f.label "Class Standing" %>
+    <div id="checkbox">
+      <%= f.label :freshman, "Freshman" %>
+      <%= f.radio_button :class_name, "Freshman" %>
+      <%= f.label :sophomore, "Sophomore" %>
+      <%= f.radio_button :class_name, "Sophomore" %>
+      <%= f.label :junior, "Junior" %>
+      <%= f.radio_button :class_name, "Junior" %>
+      <%= f.label :senior, "Senior" %>
+      <%= f.radio_button :class_name, "Senior" %>
+    </div>
+    <div id="stageleft">
+      <%= f.label :address, "Local Address/Residence Hall" %>
+      <%= f.text_field :address %>
+    </div>
+    <div id="stageright">
+      <%= f.label :apt, "Apt." %>
+      <%= f.text_field :apt %>
+    </div>
+    <div id="stageone">
+      <%= f.label :city, "City" %>
+      <%= f.text_field :city %>
+    </div>
+    <div id="stagetwo">
+      <%= f.label :state, "State" %>
+      <%= f.text_field :state %>
+    </div>
+    <div id="stagethree">
+      <%= f.label :zip, "Zip" %>
+      <%= f.text_field :zip %>
+    </div>
+    <div id="stageleft">
+      <%= f.label :phone, "Phone" %>
+      <%= f.text_field :phone %>
+    </div>
+    <div id="stageright">
+      <%= f.label :contact_time, "Best time to reach you?" %>
+      <%= f.text_field :contact_time %>
+    </div>
+    <%= f.label :email, "Email" %>
+    <%= f.text_field :email %>
+    <div id="stageleft">
+      <%= f.label :major, "Major(s)" %>
+      <%= f.text_field :major %>
+    </div>
+    <div id="stageright">
+      <%= f.label :minor, "Minor(s)" %>
+      <%= f.text_field :minor %>
+    </div>
+    <div id="stageleft">
+      <%= f.label :graduation_date, "Expected Date of Graduation" %>
+      <%= f.text_field :graduation_date %>
+    </div>
+    <div id="stageright">
+      <%= f.label :gpa, "Overall G.P.A." %>
+      <%= f.text_field :gpa %>
+    </div>
+    <%= f.label :organizations, "Please list any other organizations you are involved in and any positions you may hold:" %>
+    <%= f.text_area :organizations %>
+    <div id="stageone">
+      <%= f.label :employment_status, "Currently employed?" %>
+      <div id="employment" onClick="showEmployer();"><%= f.check_box :employment_status %></div>
+    </div>
+    <div id="employmentInfo">
+      <div id="stagetwo">
+        <%= f.label :employer, "If so, where?" %>
+        <%= f.text_field :employer %>
+      </div>
+      <div id="stagethree">
+        <%= f.label :employment_hours, "Hours per week?" %>
+        <%= f.text_field :employment_hours %>
+      </div>
+    </div>
+    <%= f.label "How did you hear about Alpha Kappa Psi? (Check all that apply)" %>
+    <div id="checkbox">
+      <%= f.label :chalkboard, "Chalkboard Announcements" %>
+      <%= f.check_box :chalkboard  %>
+      <%= f.label :classroom, "Classroom Announcements" %>
+      <%= f.check_box :classroom %>
+      <%= f.label :flyers, "Flyers & Tabling" %>
+      <%= f.check_box :flyers %>
+      <%= f.label :friend, "Friend" %>
+      <%= f.check_box :friend %>
+    </div>
+    <div id="other">
+      <%= f.label :other, "Other" %>
+      <%= f.text_field :other %>
+    </div>
+    <%= f.label :referred_by, "Were you referred by any particular person? If so, write their name below:" %>
+    <%= f.text_field :referred_by %>
+    <%= f.label :interest, "Why are you interested in joining Alpha Kappa Psi?" %>
+    <%= f.text_area :interest %>
+    <%= f.label :contributions, "What can you contribute to the fraternity?" %>
+    <%= f.text_area :contributions %>
+    <p>
+      </br><em>*Please submit only PDF versions of your resume, cover letter, and transcript</em></br>
+    </p>
+    <%= f.label :resume %>
+    <%= f.file_field :resume %>
+    <%= f.label :cover_letter %>
+    <%= f.file_field :cover_letter %>
+    <%= f.label :transcript %>
+    <%= f.file_field :transcript %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>
+
