@@ -1,5 +1,5 @@
 development:
-  adapter: mysql2
+  adapter: sqlite3
   encoding: utf8
   database: myapp_development
   username: root
@@ -7,7 +7,7 @@ development:
   host: 127.0.0.1
   port: 3306
 test:
-  adapter: mysql2
+  adapter: sqlite3
   encoding: utf8
   database: myapp_test
   username: root
