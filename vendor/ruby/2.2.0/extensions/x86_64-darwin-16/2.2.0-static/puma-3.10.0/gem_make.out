@@ -1,0 +1,17 @@
+/Users/arthurpan/.rvm/rubies/ruby-2.2.5/bin/ruby -r ./siteconf20170902-30221-10g8hmu.rb extconf.rb
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+ld: warning: directory not found for option '-L/Users/kuczynsk/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 puma_http11.bundle ./.gem.20170902-30221-l641cw/puma
