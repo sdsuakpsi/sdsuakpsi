@@ -8,10 +8,9 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
-  get '/rush' => 'home#rush'
   get '/about' => 'home#about'
-  get 'sponsors' => 'home#sponsors'
   get '/brothers' => 'home#brothers'
+  get '/rush' => 'home#rush'
   get '/contact' => 'home#contact'
   post '/contact' => 'home#send_contact'
   post '/membership' => 'home#save_membership'
@@ -19,11 +18,6 @@ Rails.application.routes.draw do
   get '/membership' => 'home#membership'
   get '/pastrush' => 'home#past_rush'
   get '/careers' => 'home#careers'
-  get '/ivconnect/service' => 'ivconnect#service'
-  get '/ivconnect/dining' => 'ivconnect#dining'
-  get '/ivconnect/lifestyle' => 'ivconnect#lifestyle'
-  get '/ivconnect/sendsubscription' => 'subscribers#send_subscription'
-  post 'ivconnect/sendsubscription' => 'subscribers#send_subscription'
   get '/applicants/:id/download_resume' => 'applicants#download_resume', as: :download_resume
   get '/applicants/:id/download_cover_letter' => 'applicants#download_cover_letter', as: :download_cover_letter
   get '/applicants/:id/download_transcript' => 'applicants#download_transcript', as: :download_transcript
