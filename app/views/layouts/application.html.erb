@@ -12,11 +12,11 @@
 	<div class="cover">
 		<h1><%= link_to "Alpha Kappa Psi - Omicron Omega", root_path%></h1>
 		<ul id="navbar">
-			<li><%= link_to "Rush", rush_path, {:class => add_active_class_if("/rush")}%></li>
 			<li><%= link_to "About", about_path, {:class => add_active_class_if("/about")}%></li>
 			<li><%= link_to "Brothers", brothers_path, {:class => add_active_class_if("/brothers")}%></li>
+			<li><%= link_to "Rush", rush_path, {:class => add_active_class_if("/rush")}%></li>
+			<li><%= link_to "Make A Wish", "/makeawish" %></li>
 			<li><%= link_to "Contact", contact_path, {:class => add_active_class_if("/contact")}%></li>
-			<!--<li><%= link_to "IV Connect", ivconnect_index_path, {:class => add_active_class_if("/ivconnect")}%></li>-->
 		</ul>
 	</div>
 </nav>
@@ -25,12 +25,10 @@
 
 <footer>
 	<div class="cover">
-		<p>For more information, please email us at <em><%= @akpsi_email %></em> </p>
-		<ul>
-			<li><a href="https://akpsi.org/">Alpha Kappa Psi - National Website</a></li>
-		</ul>
+		<br></br>
+
 	</div>
-	<p id="copyright">Copyright &#169; Alpha Kappa Psi - Omicron Omega: University of California, Santa Barbara</p>
+	<p id="copyright">Copyright &#169; Alpha Kappa Psi - Mu Sigma: San Diego State University</p>
 </footer>
 <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic|Open+Sans:300italic,400italic,600italic,400,300,600,700|Lobster' rel='stylesheet' type='text/css'>
 <script>

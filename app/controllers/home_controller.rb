@@ -2,17 +2,17 @@ class HomeController < ApplicationController
 	before_action :set_variables
 
 	def index
-		@title = "Alpha Kappa Psi - Omicron Omega | UCSB"
+		@title = "Alpha Kappa Psi - Mu Sigma | SDSU"
 		@page = "home"
 	end
 
 	def about
-		@title = "Alpha Kappa Psi - Omicron Omega | About Us"
+		@title = "Alpha Kappa Psi - Mu Sigma | About Us"
 		@page = "about"
 	end
 
 	def brothers
-		@title = "Alpha Kappa Psi - Omicron Omega | Brothers"
+		@title = "Alpha Kappa Psi - Mu Sigma | Brothers"
 		@page = "brothers"
 
 			#LinkedIn Profiles
@@ -151,7 +151,7 @@ class HomeController < ApplicationController
 	end
 
 	def rush
-		@title = "Alpha Kappa Psi - Omicron Omega | Rush"
+		@title = "Alpha Kappa Psi - Mu Sigma | Rush"
 		@page = "rush"
 	end
 
@@ -162,13 +162,6 @@ class HomeController < ApplicationController
 
 	def careers
 		@alumni_career = AlumniCareer.all
-	end
-
-	def past_rush
-	end
-
-	def membership
-		@membership_form = MembershipForm.new
 	end
 
 	def save_membership
@@ -198,11 +191,12 @@ class HomeController < ApplicationController
 		end
 	end
 
+
 	private
 
 	def set_variables
-		@akpsi_phone = "805.364.0257"
-		@akpsi_email = "pr[at]akpsiucsb.com"
+		@akpsi_phone = ""
+		@akpsi_email = ""
 	end
 
 	def membership_form_params

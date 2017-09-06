@@ -22,10 +22,12 @@ Rails.application.routes.draw do
   get '/applicants/:id/download_cover_letter' => 'applicants#download_cover_letter', as: :download_cover_letter
   get '/applicants/:id/download_transcript' => 'applicants#download_transcript', as: :download_transcript
   get '/signins/data' => 'signins#data'
+  get '/makeawish' => 'wish#index'
   resources :applicants
   resources :ivconnect
   resources :subscribers
   resources :signins
+  resources :wish
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
