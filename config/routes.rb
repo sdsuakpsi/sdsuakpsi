@@ -24,7 +24,6 @@ Rails.application.routes.draw do
   get '/signins/data' => 'signins#data'
   get '/makeawish' => 'wish#index'
   resources :applicants
-  resources :ivconnect
   resources :subscribers
   resources :signins
   resources :wish

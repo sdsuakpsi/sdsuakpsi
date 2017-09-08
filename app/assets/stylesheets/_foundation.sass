@@ -1,10 +1,13 @@
-$blue: #27c4f4
-$yellow: #fde143
+$blue: #0036c9
+$yellow: #ffdb1b
 $red: #c0392b
+$white: #fff
 
 $sans-serif: "Open Sans", sans-serif
 $serif: "Bitter", serif
 $lobster: "Lobster", lobster
+$roboto: "Roboto", Roboto
+$oxygen: "Oxygen", Oxygen
 
 @font-face
     font-family: 'WisdomScriptAJ'
@@ -12,7 +15,7 @@ $lobster: "Lobster", lobster
     src: local('WisdomScriptAJ'), url('./WisdomScriptAJ.woff') format('woff'), url('./WisdomScriptAJ.ttf') format('truetype')
 
 html, body
-    background: #efefef
+    background: $white
     height: 100%
     width: 100%
     font-size: 1em
@@ -221,12 +224,43 @@ a
         text-decoration: none
 
 /** NAVIGATION BAR
+
+.dropdown
+    position: relative
+    display: inline-block
+
+    .content
+    display: none
+    position: absolute
+    background-color: #f9f9f9
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    padding: 12px 16px
+    z-index: 1
+
+    &:hover
+        display: block
+
+
+.home_link
+    float: left
+    margin: 0px 10px 0px 10px
+    padding: 0px
+    height: 60px
+    line-height: 60px
+    display: inline
+    font-size: 1.5em
+    text-transform: uppercase
+    font-family: $oxygen
+    font-style: light
+    color: $yellow
+
 nav
     width: 100%
     min-width: 480px
     height: 64px
     background-repeat: repeat-x
-    background-image: image-url("header_bg.png")
+    background-image: image-url("header_blue.png")
     position: fixed
     top: 0
     overflow: hidden
@@ -237,48 +271,15 @@ nav
         max-width: 940px
         min-width: 480px
 
-        h1
-            float: left
-            margin: 0px
-            padding: 0px
-            height: 60px
-
-            a, a:visited, a.active, a.active:visited
-                background: image-url("logo_navbar.png") no-repeat -68px 0
-                display: block
-                width: 68px
-                height: 60px
-                margin: 0px
-                text-indent: -9999em
-                position: relative
-
-                &:hover
-                    background: image-url("logo_navbar.png") no-repeat -136px 0
-
-            a.active, a.active:visited, a.active:hover
-                background-position: 0 0
-                cursor: default
-
         #navbar
             float: right
             margin: 0px
             padding: 0px
             height: 60px
             font-size: 0.8em
-            font-weight: 600
             text-transform: uppercase
-            font-family: $sans-serif
-
-            li:last-child
-                margin: 0px 0px 0px 10px
-
-                a, a:visited
-                    font-weight: bold
-
-                a.active, a.active:hover
-                    color: $blue
-                    cursor: default
-                    background: none
+            font-family: $oxygen
+            font-style: light
 
             li
                 margin: 0px 10px 0px 10px
@@ -289,39 +290,39 @@ nav
 
                 a, a:visited
                     text-decoration: none
-                    color: #3a3a3a
+                    color: $white
                     letter-spacing: 1px
                     display: block
                     padding: 0px 10px 0px 10px
 
                     &:hover
-                        background: $blue
-                        color: #ffffff
+                        color: $yellow
 
                 a.active, a.active:hover
-                    color: $blue
+                    color: $yellow
                     cursor: default
                     background: none
 
 /** TITLE
 header
-    background: image-url("billboard.jpg") no-repeat center center #1a1a1a
-    height: 190px
+    background: image-url("dark_water.jpg") no-repeat center center #1a1a1a
+    // height: 190px
+    height: 75%
     min-width: 940px
     margin: 0 auto
     overflow: hidden
     border-bottom: 4px solid $blue
 
     .cover
-        height: 190px
+        //height: 190px
+        height: 100%
 
     h2
         position: absolute
         bottom: 0
-        color: #ffffff
-        font-family: $sans-serif
+        color: $white
+        font-family: $oxygen
         font-size: 48px
-        text-shadow: 2px 2px 1px #707070
         height: 43px
         float: left
         margin: 0px 0px 13px 10px
@@ -332,7 +333,7 @@ header
     font-size: 0.8em
     font-weight: 600
     text-transform: uppercase
-    font-family: $sans-serif
+    font-family: $oxygen
     position: absolute
     bottom: 0
     right: 0
@@ -365,7 +366,7 @@ header
 /* Footer
 footer
     overflow: hidden
-    background: #efefef
+    background: $white
     height: 100px
     min-width: 940px
     margin: 0px
