@@ -13,15 +13,7 @@
 	<%= link_to "AKPsi | Mu Sigma", root_path, class: 'home_link' %>
  	<ul id="navbar">
 			<li><%= link_to "About", about_path, {:class => add_active_class_if("/about")}%></li>
-			<li>
-				<div class="dropdown">
-					<span><%= link_to "Brothers", brothers_path, {:class => add_active_class_if("/brothers")}%></span>
-					<div class="dropdown-content">
-						<p>Hello world!</p>
-					</div>
-			 	</div>
-
-				</li>
+			<li><%= link_to "Brothers", brothers_path, {:class => add_active_class_if("/brothers")}%></li>
 			<li><%= link_to "Rush", rush_path, {:class => add_active_class_if("/rush")}%></li>
 			<li><%= link_to "Make A Wish", "/makeawish" %></li>
 			<li><%= link_to "Contact", contact_path, {:class => add_active_class_if("/contact")}%></li>
@@ -32,10 +24,6 @@
 <%= yield %>
 
 <footer>
-	<div class="cover">
-		<br></br>
-
-	</div>
 	<p id="copyright">Copyright &#169; Alpha Kappa Psi - Mu Sigma: San Diego State University</p>
 </footer>
 
