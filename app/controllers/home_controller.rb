@@ -164,18 +164,6 @@ class HomeController < ApplicationController
 		@alumni_career = AlumniCareer.all
 	end
 
-	def save_membership
-		@membership_form = MembershipForm.new(membership_form_params)
-		if @membership_form.valid?
-			@membership_form.save
-			flash[:notice] = "Thank you for submitting your application! Please email vppro@akpsiucsb.com if you have further questions."
-			redirect_to membership_path
-		else
-			flash[:notice] = "Please fill out form fully"
-			render :membership
-		end
-	end
-
 	def contact
 		@contact_form = ContactForm.new
 	end
@@ -191,47 +179,13 @@ class HomeController < ApplicationController
 		end
 	end
 
-
 	private
 
 	def set_variables
 		@akpsi_phone = ""
 		@akpsi_email = ""
-	end
-
-	def membership_form_params
-		params.require(:membership_form).permit(:last_name,
-																						:first_name,
-																						:class_name,
-																						:address,
-																						:apt,
-																						:city,
-																						:state,
-																						:zip,
-																						:phone,
-																						:contact_time,
-																						:email,
-																						:major,
-																						:minor,
-																						:graduation_date,
-																						:gpa,
-																						:organizations,
-																						:employment_status,
-																						:gpa,
-																						:organizations,
-																						:employment_status,
-																						:employer,
-																						:employment_hours,
-																						:chalkboard,
-																						:classroom,
-																						:flyers,
-																						:friend,
-																						:other,
-																						:referred_by,
-																						:interest,
-																						:contributions,
-																						:resume,
-																						:cover_letter,
-																						:transcript)
+		@akpsi_twitter = "#"
+		@akpsi_instagram = "#"
+		@akpsi_facebook = "#"
 	end
 end

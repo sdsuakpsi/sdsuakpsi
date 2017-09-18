@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
   root 'home#index'
 
   # Example of regular route:
@@ -13,15 +12,8 @@ Rails.application.routes.draw do
   get '/rush' => 'home#rush'
   get '/contact' => 'home#contact'
   post '/contact' => 'home#send_contact'
-  post '/membership' => 'home#save_membership'
-  get '/profile' => 'home#profile'
-  get '/membership' => 'home#membership'
   get '/pastrush' => 'home#past_rush'
   get '/careers' => 'home#careers'
-  get '/applicants/:id/download_resume' => 'applicants#download_resume', as: :download_resume
-  get '/applicants/:id/download_cover_letter' => 'applicants#download_cover_letter', as: :download_cover_letter
-  get '/applicants/:id/download_transcript' => 'applicants#download_transcript', as: :download_transcript
-  get '/signins/data' => 'signins#data'
   get '/makeawish' => 'wish#index'
   resources :applicants
   resources :subscribers
