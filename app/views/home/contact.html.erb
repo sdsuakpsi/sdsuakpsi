@@ -1,5 +1,28 @@
-<header>
-	<div class="cover">
-		<h2>Contact</h2>
+<header class="contact"></header>
+
+<div class="cover">
+	<h2>Contact</h2>
+</div>
+
+<div id="contactintro">
+	<h3>Send us an email!</h3>
+	<p>We look forward to hearing from you</p>
+	<div id="contactWrapper">
+		<h4 id="messageicon">Send us a message!</h4>
+		<%= form_for @contact_form,  { :url => contact_path } do |f| %>
+			<div id="stageleft">
+				<%= f.label :name, "Contact Name" %>
+	  		<%= f.text_field :name %>
+	  	</div>
+	  	<div id="stageright">
+	  		<%= f.label :email %>
+	  		<%= f.text_field :email %>
+  		</div>
+  		<%= f.label :subject %>
+  		<%= f.text_field :subject %>
+  		<%= f.label :message %>
+  		<%= f.text_area :message %>
+  		<%= f.submit "Submit" %>
+		<% end %>
 	</div>
-</header>
+</div>
