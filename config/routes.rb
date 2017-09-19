@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get '/about' => 'home#about'
   get '/brothers' => 'home#brothers'
   get '/rush' => 'home#rush'
+  get '/whyakpsi' => 'home#whyakpsi'
+  get '/faq' => 'home#faq'
   get '/contact' => 'home#contact'
   post '/contact' => 'home#send_contact'
   get '/pastrush' => 'home#past_rush'
