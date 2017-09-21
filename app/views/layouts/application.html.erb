@@ -8,18 +8,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav>
-	<div class="navcover">
-	<%= link_to "AKPsi | Mu Sigma", root_path, class: 'home_link' %>
- 	<ul id="navbar">
-			<li><%= link_to "About", about_path, {:class => add_active_class_if("/about")}%></li>
-			<li><%= link_to "Brothers", brothers_path, {:class => add_active_class_if("/brothers")}%></li>
-			<li><%= link_to "Rush", rush_path, {:class => add_active_class_if("/rush")}%></li>
-			<li><%= link_to "Make A Wish", "/makeawish" %></li>
-			<li><%= link_to "Contact", contact_path, {:class => add_active_class_if("/contact")}%></li>
-		</ul>
-	</div>
-</nav>
+  <nav>
+    <div class="navcover">
+      <%= link_to "AKPsi | Mu Sigma", root_path, class: 'home_link' %>
+      <ul id="navbar">
+        <li><%= link_to "About", about_path, {:class => add_active_class_if("/about")}%></li>
+        <li><%= link_to "Leadership", leadership_path, {:class => add_active_class_if("/leadership")}%></li>
+        <li><%= link_to "Brothers", brothers_path, {:class => add_active_class_if("/brothers")}%>
+          <ul class="submenu">
+            <li><a href="#">Leadership</a></li>
+          </ul>
+        </li>
+        <li><%= link_to "Rush", rush_path, {:class => add_active_class_if("/rush")}%></li>
+        <li><%= link_to "Make A Wish", "/makeawish" %></li>
+        <li><%= link_to "Contact", contact_path, {:class => add_active_class_if("/contact")}%></li>
+      </ul>
+    </div>
+  </nav>
 
 <%= yield %>
 

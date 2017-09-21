@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get '/about' => 'home#about'
   get '/brothers' => 'home#brothers'
+  get '/leadership' => 'home#leadership'
   get '/rush' => 'home#rush'
   get '/whyakpsi' => 'home#whyakpsi'
   get '/faq' => 'home#faq'

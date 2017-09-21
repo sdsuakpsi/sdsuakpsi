@@ -19,6 +19,14 @@
     text-align: center
     margin: 0 auto
 
+#scrolldown
+    background: image-url("chevron.png") bottom center no-repeat
+    width: 50px
+    height: 25px
+    text-align: center
+    margin: 0 auto
+    bottom: 0px
+
 #rushlink
     position: absolute
     top: 170px
@@ -44,7 +52,7 @@
             text-transform: none
 
 #intro
-    background: #ffffff
+    background: $white
     min-width: 940px
     height: auto
     margin: 0 auto
@@ -57,22 +65,18 @@
     h1
         padding: 40px 0px 0px 0px
         font-size: 2em
-        font-weight: 700
-        font-family: $sans-serif
-        text-transform: uppercase
+        font-style: bold
+        font-family: $oxygen
         line-height: 60px
-        letter-spacing: 1.5px
-        color: #303030
+        color: $dark-blue
 
     h3
         padding: 0px
         margin: (-40px) 0px 0px 0px
-        font-size: 0.95em
-        font-weight: 400
-        font-family: $sans-serif
+        font-size: 0.6em
+        font-family: $oxygen
         text-transform: uppercase
         line-height: 60px
-        letter-spacing: 1px
         color: #666666
 
     .cover
@@ -85,27 +89,41 @@
             h4
                 text-align: center
                 text-transform: uppercase
+                font-size: 1em
+                font: $oxygen
                 margin: 0 auto
-                margin-top: 100px
+                margin-top: 250px
                 padding: 0px
-                color: #666666
+                color: $dark-blue
 
             p
                 font-size: 0.8em
+                font: $oxygen
                 margin: 0 auto
                 margin-top: 15px
                 line-height: 20px
-                color: #363636
+                color: #000
                 text-align: justify
 
         #intro1
-            background: image-url("light_bulb.png") top center no-repeat
+            background: image-url("leadership2.png") top center no-repeat
 
         #intro2
-            background: image-url("community.png") top center no-repeat
+            background: image-url("community2.png") top center no-repeat
 
         #intro3
-            background: image-url("brother.png") top center no-repeat
+            background: image-url("brotherhood2.png") top center no-repeat
+
+/** ABOUT PAGE
+#about
+    max-width: 940px
+    background-color: $white
+    margin: 0 auto
+    padding: 0px
+
+    p
+        font-size: 1em
+
 
 /** RUSH WEEK SCHEDULE
 #schedule
@@ -206,6 +224,51 @@
     clear: both
     overflow: hidden
     position: relative
+
+/** LEADERSHIP PAGE
+#leadership
+    max-width: 940px
+    margin: 0 auto
+    overflow: hidden
+
+    div
+        width: 48%
+        float: left
+        margin: 0px auto
+        padding: 1%
+        text-align: center
+
+        .leaderdescription
+            h1
+                font-family: $oxygen
+                font-size: 1.2em
+                color: $dark-blue
+                font-style: bold
+                // border-bottom: 1px dotted $dark-blue
+            p
+                font-family: $oxygen
+                font-size: 0.8em
+                color: #000
+                font-style: italic
+
+        .leaderphoto
+            a, a:visited
+                margin: 0 auto
+                padding: 211px 0px 0px 0px
+                height: 40px
+                width: 200px
+                font-weight: 600
+                font-family: $oxygen
+                font-size: 1.2em
+                text-transform: uppercase
+                color: $dark-blue
+                display: block
+                text-decoration: none
+                float: left
+                cursor: pointer
+                background-size: auto 200px
+                background-repeat: no-repeat
+
 
 /** BROTHERS PAGE
 // ROSTER

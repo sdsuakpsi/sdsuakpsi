@@ -155,10 +155,21 @@ class HomeController < ApplicationController
 		@page = "rush"
 	end
 
-
-	#def profile
-
-	#end
+	def leadership
+		@connorhume = "https://www.linkedin.com/in/connorhume/"
+		@elizabethsanders = "https://www.linkedin.com/in/elizabethsiansanders/"
+		@jacobmanuel = "https://www.linkedin.com/in/jacob-manuel-b03722106/"
+		@michaelanewsom = "https://www.linkedin.com/in/michaelanewsom/"
+		@chrismavry = "https://www.linkedin.com/in/chrismavry/"
+		@taylerholm = "https://www.linkedin.com/in/taylerholm/"
+		@gracepenner = "https://www.linkedin.com/in/grace-l-penner-/"
+		@matthewflores = "https://www.linkedin.com/in/matthew-flores-1239bb122/"
+		@nicole_alexistolentino = "https://www.linkedin.com/in/ntolentino/"
+		@ammaralsaied = "https://www.linkedin.com/in/ammaralsaied/"
+		@shannondalton = "https://www.linkedin.com/in/shannon-dalton/"
+		@matthrachovy = "https://www.linkedin.com/in/matthew-hrachovy-011b91a2/"
+		@bryanmireles = "https://www.linkedin.com/in/bryan-mireles-57393810b/"
+	end
 
 	def careers
 		@alumni_career = AlumniCareer.all
