@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/leadership' => 'home#leadership'
   get '/rush' => 'home#rush'
   get '/whyakpsi' => 'home#whyakpsi'
+  post '/whyakpsi' => 'home#send_email'
   get '/faq' => 'home#faq'
   get '/contact' => 'home#contact'
   post '/contact' => 'home#send_contact'

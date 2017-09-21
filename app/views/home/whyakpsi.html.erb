@@ -8,3 +8,29 @@
 		<li><%= link_to "FAQ", faq_path %></li>
 	</ul>
 </div>
+
+<div id="whyakpsi">
+	<div>
+		<div class="video">
+			<h1>This is where the rush video should go</h1>
+		</div>
+		<div class="video">
+			<p>
+				Welcome to Fall 2017 rush! Each and every semester, SDSU's Mu Sigma chapter of Alpha Kappa Psi hosts two weeks of exciting, interactive meet and greet events- opening up the opportunity to become part of one of the greatest student organizations in the country. Co-ed and open to all majors, we are a group of professionals that take pride in our diversity and build strength from our differences. Not only do we excel in the professional world, but in the life-long friendships we make. Learn about what you can gain from our leadership program, including interview, resume, public speaking, presentation and writing skills. Take that first step into your future and check us out this rush season.
+			</p>
+		</div>
+	</div>
+	<hr>
+
+	<div>
+		<div class="signup">
+			<h1>Sign up to receive updates on Fall 2018 recruitment!</h1>
+			<%= form_for @email_form,  { :url => whyakpsi_path } do |f| %>
+				<%= f.label :email %>
+				<%= f.text_field :email %>
+			<%= f.submit "Submit" %>
+			<% end %>
+			</div>
+	</div>
+	<hr>
+</div>

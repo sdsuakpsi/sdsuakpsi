@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405182011) do
+ActiveRecord::Schema.define(version: 20170921182148) do
 
   create_table "alumni_careers", force: :cascade do |t|
     t.integer "graduation_year"
@@ -41,6 +41,15 @@ ActiveRecord::Schema.define(version: 20170405182011) do
     t.text   "one_time_deal"
     t.text   "recurring_deal"
     t.string "service"
+  end
+
+  create_table "email_forms", force: :cascade do |t|
+    t.string   "email"
+    t.string   "subject"
+    t.string   "message"
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "membership_forms", force: :cascade do |t|

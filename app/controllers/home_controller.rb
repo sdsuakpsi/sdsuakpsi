@@ -183,10 +183,26 @@ class HomeController < ApplicationController
 		@contact_form = ContactForm.new(params[:contact_form])
 		if @contact_form.valid?
 			@contact_form.send_email
-			flash[:success] = "Emails sent. We'll get in touch with you soon."
+			flash[:success] = "Email sent. We'll get in touch with you soon."
 			redirect_to contact_path
 		else
 			render :contact
+		end
+	end
+
+	def whyakpsi
+		@email_form = EmailForm.new
+		# @contact_form = ContactForm.new
+	end
+
+	def send_email
+		@email_form = EmailForm.new(params[:email_form])
+		if @email_form.valid?
+			@email_form.send_email
+			flash[:success] = "Email sent. We'll get in touch with you soon."
+			redirect_to whyakpsi_path
+		else
+			render :whyakpsi
 		end
 	end
 
