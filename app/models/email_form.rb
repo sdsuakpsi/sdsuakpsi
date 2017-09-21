@@ -1,12 +1,15 @@
-class EmailForm < ActiveRecord::Base
-  attr_accessor :email, :name, :subject, :message
-  validates :email, presence:true
+class EmailForm
+  include ::ActiveModel::Model
+
+  attr_accessor :name, :email, :subject, :message
+
+  validates :name, presence: true
 
   def initialize(params = {})
-    @name = "Unknown"
-    @subject = "User signed up to receive updates on rush"
+    @name = params[:name]
+    @subject = params[:subject]
     @email = params[:email]
-    @message = "Please add the following email to the rush email list."
+    @message = params[:message]
   end
 
   def send_email
