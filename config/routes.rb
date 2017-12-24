@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get '/pastrush' => 'home#past_rush'
   get '/careers' => 'home#careers'
   get '/makeawish' => 'wish#index'
+  get '/sponsors' => 'wish#sponsors'
   resources :applicants
   resources :subscribers
   resources :signins

@@ -35,3 +35,14 @@ function openFAQ(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function executeScroll() {
+  $("#scrolldown").click(
+      function()
+      {
+          $('html:not(:animated), body:not(:animated)').animate({
+              scrollTop: $("#homecontent").offset().top
+          }, 2000);
+      }
+  );
+}
