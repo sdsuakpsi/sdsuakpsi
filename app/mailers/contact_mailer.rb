@@ -1,8 +1,8 @@
-class ContactMailer < ActionMailer::Base
-  default from: 'arthurpan24@gmail.com'
+class ContactMailer < ApplicationMailer
+  default from: 'sdsuakpsimailer@gmail.com'
 
-  def contact_email(contact_form)
+  def contact_mailer(contact_form)
     @contact_form = contact_form
-    mail(to: 'arthurpan24@gmail.com', subject: "New message from AKPsi website")
+    mail(to: 'pr@sdsuakpsi.org', subject: 'New message from AKPsi website.')
   end
 end

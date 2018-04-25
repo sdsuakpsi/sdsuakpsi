@@ -16,6 +16,6 @@ class ContactForm
   end
 
   def send_email
-      ContactMailer.contact_email(self).deliver
+      ContactMailer.contact_mailer(self).deliver
   end
 end
