@@ -1,5 +1,7 @@
 == README
 
+This website was originally written by Arthur Pan of UCSB's AKPsi - Omicron Omega Chapter in 2017-2018. 
+
 All information pertaining to the website can be found in the following write up:
 
 https://docs.google.com/document/d/1Y_q3xkiLoWFvHDgKHu9mp8j6Tu9ZWayKKPIphxCknTo/edit?usp=sharing
